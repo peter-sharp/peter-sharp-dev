@@ -1,5 +1,7 @@
 module.exports.data = {
   layout: 'layouts/index.11ty.js',
+  title: 'Hire Me',
+  menuIndex: 0,
   tags: 'page'
 }
 
