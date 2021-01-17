@@ -1,5 +1,7 @@
 module.exports.data = {
   layout: 'layouts/index.11ty.js',
+  title: 'Home',
+  menuIndex: 1,
   tags: 'page'
 }
 

@@ -19,10 +19,10 @@ module.exports = function({ site, title, page, content, collections }) {
               <h1 class="site-title">
                 ${this.svgContents('/src/site/logo.svg', 'site-logo')}<span class="site-title__text">Peter Sharp</span>
               </h1>
-              <nav class="site-nav">
-                  <ul class="site-nav__items">
+              <nav class="nav-main">
+                  <ul class="nav-main__items">
                       ${collections.siteNav.map(
-                          ({ data, url: itemUrl }) => `
+                          ({ data, url: itemUrl }) => /*html*/`
                               <li
                                   class="nav-item ${true /* check is Active*/
                                       ? "nav-item--active"
@@ -34,7 +34,7 @@ module.exports = function({ site, title, page, content, collections }) {
 
                               </li>
                           `
-                      )}
+                      ).join('\n')}
                   </ul>
               </nav>
           </header>
