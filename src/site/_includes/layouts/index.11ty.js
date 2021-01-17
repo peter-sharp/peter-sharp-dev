@@ -42,9 +42,15 @@ module.exports = function({ site, title, page, content, collections }) {
               ${content}
           </main>
           <footer class="section sticky-footer__footer">
-              <div class="">
-                  <a href="/contact">Hire me</a>
-              </div>
+              <section class="">
+                  <a href="/contact">Contact me</a>
+              </section>
+              <section>
+                <h2>Social media</h2>
+                <ul>
+                    <li><a rel="me" href="https://github.com/peter-sharp">Github</a></li>
+                </ul>
+              </section>
           </footer>
       </body>
   </html>
