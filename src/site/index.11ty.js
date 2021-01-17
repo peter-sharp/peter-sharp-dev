@@ -7,29 +7,33 @@ module.exports.data = {
 
 module.exports.render = function index() {
   return /*html*/`
-  <header id="pageHero">
-    <div>
-      <p>Get you business online</p>
-      <a class="button" href="/contact">Contact me</a>
+  <header id="pageHero" class="hero centered wrapper">
+    <div class="wrapper__inner stack stack--gap-100">
+      <h2>Get your business&nbsp;online</h2>
+      <a class="button" href="/contact" data-state="inverted">Contact me</a>
     </div>
   </header>
-  <section id="services">
-    <h2>services</h2>
-    <ul>
-      <li>Brochure sites</li>
-      <li>Ecommerce sites</li>
-      <li>Web apps</li>
-    </ul>
+  <section id="services" class="wrapper">
+    <div class="wrapper__inner">
+      <h2>services</h2>
+      <ul>
+        <li>Brochure websites</li>
+        <li>Ecommerce websites</li>
+        <li>Web apps</li>
+      </ul>
+    </div>
   </section>
-  <section id="contactUs">
-    <h2>about</h2>
-    Fullstack web developer living in Fairlie, South Canterbury, New Zealand with 4+ years experience designing, delivering and maintaining small to large scale websites and web apps in WordPress as well as a variety of other frameworks.
-    </p>
-    <p>Being part designer, I care about crafting sites and apps with good user experience that excel in meeting their bottom line.</p>
+  <section id="contactUs" class="wrapper">
+    <div class="wrapper__inner">
+        <h2>about</h2>
+        Fullstack web developer living in Fairlie, South Canterbury, New Zealand with 4+ years experience designing, delivering and maintaining small to large scale websites and web apps in WordPress as well as a variety of other frameworks.
+        </p>
+        <p>Being part designer, I care about crafting sites and apps with good user experience that excel in meeting their bottom line.</p>
+    </div>
   </section>
-  <section id="contactUs">
-    <div>
-      <p>make an enquiry</p>
+  <section id="contactUs" class="wrapper cta">
+    <div class="wrapper__inner">
+      <p>Make an enquiry</p>
       <a class="button" href="/contact">Contact me</a>
     </div>
   </section>

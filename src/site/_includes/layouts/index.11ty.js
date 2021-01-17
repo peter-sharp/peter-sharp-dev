@@ -14,17 +14,19 @@ module.exports = function({ site, title, page, content, collections }) {
           <base href="/" />
           <link rel="stylesheet" href="/style.css" />
       </head>
-      <body class="sticky-footer stack stack--gap-large">
+      <body class="sticky-footer">
           <header class="site-header">
               <h1 class="site-title">
-                ${this.svgContents('/src/site/logo.svg', 'site-logo')}<span class="site-title__text">Peter Sharp</span>
+                <a class="site-title__link" href="/">
+                    ${this.svgContents('/src/site/logo.svg', 'site-logo')}<span class="site-title__text">Peter Sharp</span>
+                </a>
               </h1>
               <nav class="nav-main">
                   <ul class="nav-main__items">
                       ${collections.siteNav.map(
                           ({ data, url: itemUrl }) => /*html*/`
                               <li
-                                  class="nav-item ${true /* check is Active*/
+                                  class="nav-item ${page.url == itemUrl
                                       ? "nav-item--active"
                                       : ""}"
                               >
@@ -38,19 +40,21 @@ module.exports = function({ site, title, page, content, collections }) {
                   </ul>
               </nav>
           </header>
-          <main class="sticky-footer__content">
+          <main class="sticky-footer__content stack stack--gap-900">
               ${content}
           </main>
-          <footer class="section sticky-footer__footer">
-              <section class="">
-                  <a href="/contact">Contact me</a>
-              </section>
-              <section>
-                <h2>Social media</h2>
-                <ul>
-                    <li><a rel="me" href="https://github.com/peter-sharp">Github</a></li>
-                </ul>
-              </section>
+          <footer class="wrapper site-footer sticky-footer__footer">
+              <div class="wrapper__inner cluster">
+                <section class="">
+                    <a href="/contact">Contact me</a>
+                </section>
+                <section>
+                    <h2 class="visually-hidden">Social media</h2>
+                    <ul class="unstyled-list">
+                        <li><a rel="me" href="https://github.com/peter-sharp">Github</a></li>
+                    </ul>
+                </section>
+              </div>
           </footer>
       </body>
   </html>
