@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 18 18">
   <defs/>
   <style>
     svg {
           background: linear-gradient(0deg, rgba(0,141,246,1) 0%, rgba(170,27,198,1) 35%, rgba(227,44,44,1) 65%, rgba(243,128,0,1) 100%);
           background-position: 46% 58%;
-          background-size: 75% 90%;
+          background-size: 90% 90%;
           background-repeat: no-repeat;
     }
   </style>
