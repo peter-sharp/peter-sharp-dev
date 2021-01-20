@@ -6,6 +6,7 @@ module.exports = function eleventyConfig(config) {
     config.addPlugin(svgContents);
 
     config.addPassthroughCopy('src/site/style.css')
+    config.addPassthroughCopy('src/site/favicon.svg')
 
     config.addCollection('siteNav', siteNav);
 
