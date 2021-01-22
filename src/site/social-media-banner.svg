@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 830.769 436.154" style="background:linear-gradient(0deg,#008df6 0%,#aa1bc6 35%,#e32c2c 65%,#f38000 100%);background-repeat:no-repeat">
+  <g stroke-width=".241">
+    <g class="layer">
+      <path fill="none" stroke="#fff" stroke-linecap="round" stroke-width=".193" d="M17 17V1.8l-.7-.8H.9v16.2h16.2z" transform="matrix(4.11433 0 0 4.16979 162.042 175.222)"/>
+      <path fill="#fff" d="M179.322 191.484h13.989v54.208h-13.99v-53.79zm27.154 0h11.932v32.525h-12.343z"/>
+      <path fill="#fff" d="M175.208 221.09h43.2v2.919h-43.2zm4.114-29.606h39.086v2.502h-39.086z"/>
+    </g>
+    <text style="line-height:1.25" x="246.336" y="222.661" font-size="16.615" font-family="sans-serif" stroke-width=".167" fill="#fff" transform="matrix(4.11433 0 0 4.16979 -742.94 -684.62)">
+      <tspan x="246.336" y="222.661">Peter Sharp</tspan>
+    </text>
+  </g>
+</svg>
