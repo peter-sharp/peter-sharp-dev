@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/resume/style.css"/>
     <link rel="stylesheet" media="print" href="/resume/print.css"/>
 </head>
-<body class="stack">
+<body class="stack h-card">
     <header class="page-header wrapper">
         <div class="columns">
             <div>
@@ -18,12 +18,12 @@
                 <h2 class="subheader">{{subTitle}}</h2>
             </div>
             <ul class="list-unstyled text-right-s">
-                <li>{{general.name}}</li>
-                <li>{{general.address}}</li>
-                <li><a href="tel:{{general.mobile}}">{{general.mobile}}</a></li>
-                <li><a href="mailto: {{general.email}}">{{general.email}}</a></li>
-                <li><a href="https://{{general.website}}">{{general.website}}</a></li>
-                <li><a href="https://{{general.github}}">Github</a></li>
+                <li class="p-name">{{general.name}}</li>
+                <li class="p-locality">{{general.address}}</li>
+                <li class="p-tel"><a href="tel:{{general.mobile}}">{{general.mobile}}</a></li>
+                <li class="u-email"><a href="mailto: {{general.email}}">{{general.email}}</a></li>
+                <li class="u-url"><a href="https://{{general.website}}">{{general.website}}</a></li>
+                <li class="u-url"><a href="https://{{general.github}}">Github</a></li>
             </ul>
         </div>
     </header>
