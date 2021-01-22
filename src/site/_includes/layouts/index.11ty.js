@@ -14,11 +14,11 @@ module.exports = function({ site, title, page, content, collections }) {
           <base href="/" />
           <link rel="stylesheet" href="/style.css" />
       </head>
-      <body class="sticky-footer">
+      <body class="sticky-footer h-card">
           <header class="site-header">
               <h1 class="site-title">
                 <a class="site-title__link" href="/">
-                    ${this.svgContents('/src/site/logo.svg', 'site-logo')}<span class="site-title__text">Peter Sharp</span>
+                    ${this.svgContents('/src/site/logo.svg', 'site-logo')}<span class="site-title__text p-name">Peter Sharp</span>
                 </a>
               </h1>
               <nav class="nav-main">
@@ -51,11 +51,11 @@ module.exports = function({ site, title, page, content, collections }) {
                 <section>
                     <h2 class="visually-hidden">Social media</h2>
                     <ul class="unstyled-list">
-                        <li><a rel="me" href="https://github.com/peter-sharp">Github</a></li>
+                        <li><a rel="me" class="u-url" href="https://github.com/peter-sharp">Github</a></li>
                     </ul>
                 </section>
                 <section class="">
-                    <a href="/resume">My resume</a>
+                    <a class="u-url" href="/resume">My resume</a>
                 </section>
               </div>
           </footer>
