@@ -1,4 +1,4 @@
-module.exports = function({ site, title, page, content, collections }) {
+module.exports = function({ site, title, page, content, description = '', collections }) {
   return /*html*/`
   <!DOCTYPE html>
   <html lang="en" ng-app="portfolioApp">
@@ -11,8 +11,15 @@ module.exports = function({ site, title, page, content, collections }) {
           />
           <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
           <title>${title} | ${site.title}</title>
+          <meta name="description" content="${description}" />
           <base href="/" />
           <link rel="stylesheet" href="/style.css" />
+
+              <!-- Facebook -->
+            <meta property="og:title" content="${title}" />
+            <meta property="og:image" content="https://${site.url}/social-media-banner.png" />
+            <meta property="og:site_name" content="${site.title}" />
+            <meta property="og:description" content="${description}" />
       </head>
       <body class="sticky-footer h-card">
           <header class="site-header">
