@@ -1,0 +1,19 @@
+
+<h2>
+    {% case icon %}
+    {% when 'work' %}
+    {{ '/src/site/_includes/icon-work.svg' | svgContents: 'icon' }}
+    {% when 'education' %}
+    {{ '/src/site/_includes/icon-education.svg' | svgContents: 'icon' }}
+    {% endcase %}
+    {{title}}
+</h2>
+<ul class="list-unstyled stack">
+    {% for item in collections[collection] %}
+    <li>
+        <h3>{{item.data.title}}</h3>
+        <h4 class="subheader">{{item.data.start | date: "%d/%m/%Y"}} - {% if item.data.end %}{{item.data.end | date: "%d/%m/%Y"}}{% else %}Current{% endif %}</h4>
+        {{item.templateContent}}
+    </li>
+    {% endfor %}
+</ul>

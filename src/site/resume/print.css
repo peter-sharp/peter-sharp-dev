@@ -1,0 +1,52 @@
+body {
+    color: #646464;
+    font-size: 75%;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {font-size: 1.6rem;}
+  
+  h3 {font-size: 1.3rem;}
+  
+  h4 {font-size: 1.15rem;}
+  
+  h5 {font-size: 1.07rem;}
+  
+  small, .text_small {font-size: 0.8rem;}
+
+
+h1 + *,
+h2 + *,
+h3 + *,
+h4 + *,
+h5 + *,
+h6 + * {
+    margin-bottom: 0;
+    margin-top: 1.6em;
+}
+
+h1 + .subheader,
+h2 + .subheader,
+h3 + .subheader,
+h4 + .subheader,
+h5 + .subheader,
+h6 + .subheader {
+    margin-top: 0;
+}
+
+.stack > *:not(script) + * {
+    margin-top: 1.8em;
+}
+
+p + * {
+    margin-top: 0.6em;
+}
+
+
+.print-no-break {
+    page-break-inside: avoid;
+}

@@ -1,0 +1,83 @@
+---
+layout: layouts/resume.liquid
+tags: cv
+subTitle: Web Developer
+skills:
+ - PHP
+ - WordPress
+ - NodeJs
+interests:
+- Game development
+- Serverless
+- Jamstack
+- UX
+- Design
+# Looking for contract work in Web Development.
+---
+<section class="wrapper">
+    <p>Fullstack web developer with 4+ years experience designing, delivering and maintaining small to large scale websites and web apps in WordPress as well as a variety of other frameworks.
+    </p>
+    <p>Being part designer, I care about crafting sites and apps with good user experience that excel in meeting their bottom line.</p>
+</section>
+<section class="wrapper">
+    {% include components/skillList %}
+</section>
+<div class="wrapper">
+    <div class="columns">
+        <section class="column-1-2">
+            {% include components/historyList, title: 'Work', collection: 'itWork', icon: 'work' %}
+        </section>
+        <section class="column-1-2">
+            {% include components/historyList, title: 'Education', collection: 'itEducation', icon: 'education' %}
+        </section>
+    </div>
+</div>
+<section class="wrapper">
+    <h2>Technology summary</h2>
+  
+    <ul class="columns justify-start">
+        <li>HTML</li>
+        <li>
+            CSS
+        </li>
+        <li>
+            JavaScript
+        </li>
+        <li>React</li>
+        <li>Lodash</li>
+        <li>jQuery</li>
+        <li>AJAX</li>
+        <li>REST</li>
+    
+        <li>
+            Nodejs
+        </li>
+        <li>
+            PHP
+        </li>
+        <li>
+            WordPress
+        </li>
+        <li>
+            Slim
+        </li>
+        <li>
+            Zend (1.1) 
+        </li>
+        <li>
+            Bash
+        </li>
+        <li>
+            MySQL
+        </li>
+        <li>
+            Linux
+        </li>
+        <li>
+            AWS
+        </li>
+    </ul>
+</section>
+<section class="wrapper">
+    {% include components/interestList %}
+</section>

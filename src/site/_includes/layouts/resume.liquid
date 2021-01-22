@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/resume/style.css"/>
+    <link rel="stylesheet" media="print" href="/resume/print.css"/>
+</head>
+<body class="stack">
+    <header class="page-header wrapper">
+        <div class="columns">
+            <div>
+                <h1>
+                    {{ '/src/site/logo.svg' | svgContents: 'logo' }}
+                    {{general.nameShort}}
+                </h1>
+                <h2 class="subheader">{{subTitle}}</h2>
+            </div>
+            <ul class="list-unstyled text-right-s">
+                <li>{{general.name}}</li>
+                <li>{{general.address}}</li>
+                <li><a href="tel:{{general.mobile}}">{{general.mobile}}</a></li>
+                <li><a href="mailto: {{general.email}}">{{general.email}}</a></li>
+                <li><a href="https://{{general.website}}">{{general.website}}</a></li>
+                <li><a href="https://{{general.github}}">Github</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="stack">
+        {{content}}
+    </main>
+</body>
+</html>

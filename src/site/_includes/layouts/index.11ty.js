@@ -54,6 +54,9 @@ module.exports = function({ site, title, page, content, collections }) {
                         <li><a rel="me" href="https://github.com/peter-sharp">Github</a></li>
                     </ul>
                 </section>
+                <section class="">
+                    <a href="/resume">My resume</a>
+                </section>
               </div>
           </footer>
       </body>

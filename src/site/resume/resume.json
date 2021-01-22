@@ -1,0 +1,24 @@
+{
+    "general": {
+            "name": "Peter Victor Sharp",
+            "nameShort": "Peter Sharp",
+            "address": "Fairlie 7925",
+            "mobile": "027 305-4277",
+            "email": "hello@petersharp.dev",
+            "website": "petersharp.dev",
+            "github": "https://github.com/peter-sharp"
+    },
+    "interests": [
+        "Programming",
+        "Painting / Sketching",
+        "Cooking",
+        "Reading",
+        "Gardening",
+        "Hiking"
+    ],
+    "skills": [
+        "Problem solving",
+        "Teamwork",
+        "Eye for detail"
+    ]
+}
