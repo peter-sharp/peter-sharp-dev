@@ -1,0 +1,33 @@
+---
+layout: layouts/resume.liquid
+tags: cv
+skills:
+ - Knife handling
+interests:
+- Baking
+- Coffee
+description: |
+    7+ years experience in a variety of assembly, retail, creative and IT roles.
+# Looking for contract work in Web Development.
+---
+<section class="wrapper">
+    <p>7+ years experience in a variety of assembly, retail, creative and IT roles.
+    </p>
+    
+</section>
+<section class="wrapper">
+    {% include components/skillList %}
+</section>
+<div class="wrapper">
+    <div class="columns">
+        <section class="column-1-2">
+            {% include components/historyList, title: 'Work', collection: 'generalWork', icon: 'work' %}
+        </section>
+        <section class="column-1-2">
+            {% include components/historyList, title: 'Education', collection: 'generalEducation', icon: 'education' %}
+        </section>
+    </div>
+</div>
+<section class="wrapper">
+    {% include components/interestList %}
+</section>
