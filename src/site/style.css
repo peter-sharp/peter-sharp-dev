@@ -318,8 +318,8 @@ button {
 }
 
 .hero {
-    min-height: 30em;
-    min-height: 30vh;
+    min-height: 70%;
+    min-height: 75vh;
     text-align: center;
     background: rgb(0,141,246);
     background: linear-gradient(0deg, rgba(0,141,246,1) 0%, rgba(170,27,198,1) 35%, rgba(227,44,44,1) 65%, rgba(243,128,0,1) 100%);
