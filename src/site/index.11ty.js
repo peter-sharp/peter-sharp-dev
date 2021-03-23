@@ -14,19 +14,19 @@ module.exports.render = function index() {
     </div>
   </header>
   <section id="services" class="wrapper">
-    <div class="wrapper__inner p-note">
+    <div class="wrapper__inner p-note stack stack--gap-100">
       <h2>services</h2>
       <ul>
+        <li>Web apps</li>
         <li>Brochure websites</li>
         <li>Ecommerce websites</li>
-        <li>Web apps</li>
       </ul>
     </div>
   </section>
   <section id="contactUs" class="wrapper">
-    <div class="wrapper__inner p-note">
+    <div class="wrapper__inner p-note stack stack--gap-100">
         <h2>about</h2>
-        Fullstack web developer living in <span class="p-locality">Fairlie</span>, <span class="p-region">South Canterbury</span>, <span class="p-country-name">New Zealand</span> with 4+ years experience designing, delivering and maintaining small to large scale websites and web apps in WordPress as well as a variety of other frameworks.
+        <p>Fullstack web developer living in <span class="p-locality">Fairlie</span>, <span class="p-region">South Canterbury</span>, <span class="p-country-name">New Zealand</span> with 4+ years experience designing, delivering and maintaining small to large scale websites and web apps in WordPress as well as a variety of other frameworks.
         </p>
         <p>Being part designer, I care about crafting sites and apps with good user experience that excel in meeting their bottom line.</p>
     </div>
