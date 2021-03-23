@@ -53,16 +53,16 @@ module.exports = function({ site, title, page, content, description = '', collec
           <footer class="wrapper site-footer sticky-footer__footer">
               <div class="wrapper__inner cluster">
                 <section class="">
-                    <a href="/contact">Contact me</a>
+                    <a class="site-footer__link" href="/contact">Contact me</a>
                 </section>
                 <section>
                     <h2 class="visually-hidden">Social media</h2>
                     <ul class="unstyled-list">
-                        <li><a rel="me" class="u-url" href="https://github.com/peter-sharp">Github</a></li>
+                        <li><a rel="me" class="u-url site-footer__link" href="https://github.com/peter-sharp">Github</a></li>
                     </ul>
                 </section>
                 <section class="">
-                    <a class="u-url" href="/resume">My resume</a>
+                    <a class="u-url site-footer__link" href="/resume">My resume</a>
                 </section>
               </div>
           </footer>

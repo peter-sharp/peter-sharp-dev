@@ -1,4 +1,6 @@
-
+:root {
+    --body-color: #350d71;
+}
 
 
 html, body {
@@ -10,6 +12,7 @@ body {
     font-size: 112.5%;
     margin: 0;
     color: #350d71;
+    color: var(--body-color);
     background-color: #d6dbec;
 }
 
@@ -309,8 +312,15 @@ button {
 }
 
 .site-footer {
-    border-top: 0.1em solid;
     padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #350d71;
+    background-color: var(--body-color);
+}
+
+.site-footer,
+.site-footer__link {
+    color: #fff;
 }
 
 .form-group > *{
@@ -335,6 +345,7 @@ button {
 .unstyled-list {
     list-style-type: none;
     padding-left: 0;
+    margin: 0;
 }
 
 .pad-top-900 {
