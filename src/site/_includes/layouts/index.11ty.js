@@ -57,8 +57,9 @@ module.exports = function({ site, title, page, content, description = '', collec
                 </section>
                 <section>
                     <h2 class="visually-hidden">Social media</h2>
-                    <ul class="unstyled-list">
+                    <ul class="unstyled-list cluster">
                         <li><a rel="me" class="u-url site-footer__link" href="https://github.com/peter-sharp">Github</a></li>
+                        <li><a rel="me" class="u-url site-footer__link" href="https://www.linkedin.com/in/peter-v-sharp/">Linkedin</a></li>
                     </ul>
                 </section>
                 <section class="">
