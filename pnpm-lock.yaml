@@ -1,7 +1,8 @@
 devDependencies:
   '@11ty/eleventy': 0.11.1
+  dotenv: 8.2.0
   eleventy-plugin-svg-contents: 0.7.0
-lockfileVersion: 5.1
+lockfileVersion: 5.2
 packages:
   /@11ty/dependency-tree/1.0.0:
     dev: true
@@ -659,7 +660,7 @@ packages:
     resolution:
       integrity: sha1-5+Ch+e9DtMi6klxcWpboBtFoc7s=
   /core-js/2.6.11:
-    deprecated: 'core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.'
+    deprecated: core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.
     dev: true
     requiresBuild: true
     resolution:
@@ -796,6 +797,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-Lgd2XcJ/NjEw+7tFvfKxOzCYKZsdct5lczQ2ZaQY8Djz7pfAD3Gbp8ySJWtreII/vDlMVmxwa6pHmdxIYgttDg==
+  /dotenv/8.2.0:
+    dev: true
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
   /easy-extender/2.3.4:
     dependencies:
       lodash: 4.17.20
@@ -2787,4 +2794,5 @@ packages:
       integrity: sha1-AI4G2AlDIMNy28L47XagymyKxBk=
 specifiers:
   '@11ty/eleventy': ^0.11.1
+  dotenv: ^8.2.0
   eleventy-plugin-svg-contents: ^0.7.0

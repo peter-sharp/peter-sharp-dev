@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const siteNav = require('./src/site/_includes/collections/siteNav.js');
 
 const svgContents = require("eleventy-plugin-svg-contents");

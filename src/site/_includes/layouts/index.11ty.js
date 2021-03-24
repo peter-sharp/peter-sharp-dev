@@ -22,7 +22,7 @@ module.exports = function({ site, title, page, content, description = '', collec
             <meta property="og:description" content="${description}" />
             <script src="https://getinsights.io/js/insights.js"></script>
             <script>
-                insights.init("Peter Sharp")
+                insights.init("${site.insightId}")
                 insights.trackPages()
             </script>
       </head>
