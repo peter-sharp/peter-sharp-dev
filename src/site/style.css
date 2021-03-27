@@ -163,6 +163,10 @@ button {
   justify-content: space-between;
 }
 
+.site-title__text {
+    margin-left: 0.48em;
+}
+
 .nav-main__items {
     display: inline-block;
     display: inline-flex;
