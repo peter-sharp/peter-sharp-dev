@@ -167,6 +167,21 @@ h6 + .subheader {
   min-width: 18rem;
 }
 
+.button,
+button {
+    font-size: 1.1em;
+    background: transparent;
+    padding: 0.6em;
+    border: solid 0.1em;
+    text-decoration: none;
+    transition: all 100ms ease;
+}
+
+
+.button {
+    display: inline-block;
+}
+
 @media screen and (max-width: 600px) {
   .text-right-s {
     text-align: left;

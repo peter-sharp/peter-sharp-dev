@@ -50,3 +50,7 @@ p + * {
 .print-no-break {
     page-break-inside: avoid;
 }
+
+.screen-only {
+    display: none;
+}
