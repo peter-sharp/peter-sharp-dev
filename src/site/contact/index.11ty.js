@@ -23,8 +23,9 @@ module.exports.render = function contact() {
           <textarea required id="contactMessage" name="message"></textarea>
         </p>
         <p class="form-group" >
-          <label for="contactAddress">address - don't fill out this field if you're a human</label>
+          <label for="contactAddress">address</label>
           <textarea id="contactAddress" name="address"></textarea>
+          <span>don't fill out this field if you're a human<span>
         </p>
         <p>
           <label><input type="checkbox" id="contactPromotionalContent" name="promotionalContent"> Send me promotional content</label>
