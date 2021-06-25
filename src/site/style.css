@@ -101,7 +101,6 @@ button {
 }
 
 .stack > *:not(script):not(style) + * {
-    display: block;
     margin-top: 1em;
     margin-top: var(--gap, 1em);
 }
