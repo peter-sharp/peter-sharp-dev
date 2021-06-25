@@ -26,8 +26,8 @@ module.exports = function({ site, title, page, content, description = '', collec
                 insights.trackPages()
             </script>
       </head>
-      <body class="sticky-footer h-card">
-          <header class="site-header">
+      <body class="sticky-footer h-card ${page.fileSlug || 'home'}">
+          <header class="site-header ${page.fileSlug || 'home'}__site-header">
               <h1 class="site-title">
                 <a class="site-title__link" href="/">
                     ${this.svgContents('/src/site/logo.svg', 'site-logo')}<span class="site-title__text p-name">Peter Sharp</span>
