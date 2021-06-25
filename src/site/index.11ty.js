@@ -7,8 +7,10 @@ module.exports.data = {
 
 module.exports.render = function index() {
   return /*html*/`
-  <header id="pageHero" class="hero centered wrapper">
-    <div class="wrapper__inner stack stack--gap-100">
+  <header id="pageHero" class="hero centered wrapper wrapper--full-width">
+    ${this.svgContents('/src/site/mountain-banner.svg', 'hero__svg-bg')}
+    ${this.svgContents('/src/site/mountain-banner-sheep.svg')}
+    <div class="wrapper__inner hero__cta stack stack--gap-100">
       <h2 class="hero__message">Simple, effective web apps and&nbsp;websites</h2>
       <a class="button" href="/contact" data-state="inverted">Contact me</a>
     </div>

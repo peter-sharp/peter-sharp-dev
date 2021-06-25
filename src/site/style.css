@@ -135,6 +135,12 @@ button {
     padding-inline: 1em;
 }
 
+.wrapper--full-width {
+    padding-left: 0;
+    padding-right: 0;
+    padding-inline: 0;
+}
+
 .wrapper__inner {
     margin-left: auto;
     margin-right: auto;
@@ -158,7 +164,6 @@ button {
 
 
 .site-header {
-  border-bottom: 0.1em solid;
   display: flex;
   justify-content: space-between;
 }
@@ -338,8 +343,30 @@ button {
     min-height: 70%;
     min-height: 75vh;
     text-align: center;
-    background: rgb(0,141,246);
-    background: linear-gradient(0deg, rgba(0,141,246,1) 0%, rgba(170,27,198,1) 35%, rgba(227,44,44,1) 65%, rgba(243,128,0,1) 100%);
+    /* background: rgb(0,141,246); */
+    /* background: linear-gradient(0deg, rgba(0,141,246,1) 0%, rgba(170,27,198,1) 35%, rgba(227,44,44,1) 65%, rgba(243,128,0,1) 100%); */
+    position: relative;
+}
+
+.hero__svg-bg {
+    margin-left: -1em;
+    margin-right: -1em;
+    width: 100%;
+}
+
+.sheep {
+    width: 4em;
+    left: calc(39.2% - 2em);
+    bottom: 14vh;
+    position: absolute;
+}
+
+.hero__cta {
+    position: absolute;
+    width: 100%;
+    max-width: 20em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero__message {

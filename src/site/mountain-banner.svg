@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="100%" height="75vh" preserveAspectRatio="none" viewBox="0 0 238 212">
+  <defs>
+    <linearGradient id="c">
+      <stop offset="0" stop-color="#ecc6b8"/>
+      <stop offset="1" stop-color="#ecc6b8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="b">
+      <stop offset="0" stop-color="#aa1bc6"/>
+      <stop offset="1" stop-color="#008df6"/>
+    </linearGradient>
+    <linearGradient id="a">
+      <stop offset="0" stop-color="#aa1bc6"/>
+      <stop offset="1" stop-color="#f38000"/>
+    </linearGradient>
+    <linearGradient xlink:href="#b" id="d" x1="368.2" y1="395.2" x2="364.1" y2="-87" gradientUnits="userSpaceOnUse"/>
+    <linearGradient xlink:href="#a" id="e" gradientUnits="userSpaceOnUse" x1="83.2" y1="177.5" x2="83.2" y2="-13.8"/>
+    <radialGradient xlink:href="#c" id="f" cx="1431.8" cy="78" fx="1431.8" fy="78" r="68.2" gradientTransform="matrix(1 0 0 1.0223 0 -2)" gradientUnits="userSpaceOnUse"/>
+  </defs>
+
+  <path class="sky" width="100%" transform="matrix(.26458 0 0 .26458 15 25)" d="M-80-96v523l229 222 145-108 100 146 469-298V-96z" fill="url(#d)"/>
+  <path class="mountain" d="M132 6l56 85 19-12 36 49-124 79-26-39-39 29-60-59 42-43 14 12z" fill="url(#e)" />
+</svg>

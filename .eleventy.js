@@ -35,6 +35,8 @@ module.exports = function eleventyConfig(config) {
         }
     });
 
+    config.addWatchTarget("./src/site/mountain-banner.svg");
+
     return {
         dir: {
             input: 'src/site'
