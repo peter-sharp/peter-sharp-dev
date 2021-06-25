@@ -379,6 +379,9 @@ button {
   width: 1px;
 }
 
+.hide-next + * {
+    display: none;
+}
 
 @media all and (max-width: 600px) {
   .site-title__text {
