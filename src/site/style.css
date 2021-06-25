@@ -366,6 +366,9 @@ button {
     max-width: 20em;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1em;
 }
 
 .hero__message {
@@ -439,4 +442,7 @@ button {
     z-index: 100000;
   }
 
+  .hero__svg-bg {
+    height: 88vh;
+  }
 }
