@@ -100,6 +100,10 @@ button {
     flex-shrink: 0;
 }
 
+.stack {
+    --gap: 1em;
+}
+
 .stack > *:not(script):not(style) + * {
     margin-top: 1em;
     margin-top: var(--gap, 1em);
@@ -108,6 +112,7 @@ button {
 .stack--gap-100 {
     --gap: 0.4em;
 }
+
 
 .stack--gap-500 {
     --gap: 2em;
