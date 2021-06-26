@@ -10,7 +10,8 @@ module.exports = async function generatePortfolioImages() {
     
     const links = await Promise.all(files.map(async function getLink(x){
         const text = await readFile(path.resolve('src/site/portfolio', x), 'utf8');
-        return graymatter(text)?.data?.link;
+        const { data = {} } = graymatter(text);
+        return data.link;
     }));
 
     const browser = await chromium.launch();
