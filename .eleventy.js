@@ -2,6 +2,7 @@ require('dotenv').config();
 
 const siteNav = require('./src/site/_includes/collections/siteNav.js');
 const generateResumePDF = require("./scripts/generate-resume-PDF.js");
+const generatePortfolioImages = require("./scripts/generate-portfolio-images.js");
 
 const svgContents = require("eleventy-plugin-svg-contents");
 
@@ -30,6 +31,12 @@ module.exports = function eleventyConfig(config) {
         try {
             await generateResumePDF();
             console.info('resume PDF generated');
+        } catch (e) {
+            console.error(e);
+        }
+        try {
+            await generatePortfolioImages();
+            console.info('portfolio images generated');
         } catch (e) {
             console.error(e);
         }

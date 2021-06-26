@@ -217,46 +217,6 @@ button {
 }
 
 
-.cursor {
-    --size: 0.8em;
-    transform: scaleY(0);
-}
-
-.cursor__outer {
-    background: #ced9e4;
-    background: linear-gradient(45deg, transparent 45%, #ced9e4 45%);
-    background: linear-gradient(45deg, transparent 45%, var(--color-grey-100) 45%);
-    border: 0.1em solid #15181e;
-    border-color: var(--color-grey-900);
-    border-left-color: transparent;
-    border-bottom-color: transparent;
-    display: flex;
-    height: 0.8em;
-    height: var(--size);
-    justify-content: center;
-    align-items: center;
-    transform: rotate(-46deg);
-    width: 0.8em;
-    width: var(--size);
-}
-
-.cursor__inner {
-    background: linear-gradient(45deg, #15181e 0%, #15181e 50%, transparent 51% );
-    background: linear-gradient(45deg, var(--color-grey-900) 0%, var(--color-grey-900) 50%, transparent 51% );
-    border: 0.1em solid #15181e;
-    border-color: var(--color-grey-900);
-    height: 0.4em;
-    width: 0.4em;
-}
-
-
-.nav-item__cursor {
-    left: 50%;
-    transform: translateX(-50%) scaleY(0);
-    top: calc(100% - 0.4em);
-    position: absolute;
-    visibility: hidden;
-}
 
 .nav-item__link:focus ~ .nav-item__cursor,
 .nav-item:hover .nav-item__cursor,
@@ -343,6 +303,67 @@ button {
 .form-group > *{
     display: block;
 }
+
+/* gallery */
+.gallery {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.gallery__card {
+    flex: 1 0 18em;
+    width: 18em;
+    max-width: calc(50% - var(--gap));
+}
+.card {
+    position: relative;
+}
+
+.card__image {
+    height: auto;
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+.card__image-clip {
+    box-sizing: border-box;
+    max-height: 18em;
+    overflow-y: hidden;
+    /* HACK fixes flexbox accounting for clipped contents */
+    width: 100%;
+}
+.card__title {
+    color: #15181e;
+    color: var(--color-grey-900);
+    line-height: 1;
+}
+.card__link {
+
+    color: var(--color-grey-900);
+}
+.card__link::after {
+    content: " ";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.gallery {
+    --gap: 3em;
+}
+.gallery__card {
+    margin-right: 3em;
+    margin-right: var(--gap);
+    margin-bottom: 3em;
+    margin-bottom: var(--gap);
+}
+/* end gallery*/
 
 .hero {
     min-height: 70%;
