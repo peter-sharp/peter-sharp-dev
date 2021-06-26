@@ -12,6 +12,7 @@ Also gained technical skills in digital 3D modelling and animation.
 Skills I've used during my web development career:
 
 - image manipulation
-- <a href="https://careerfoundry.com/en/blog/ui-design/what-are-gestalt-principles/">gestalt</a>
+- <a href="https://careerfoundry.com/en/blog/ui-design/what-are-gestalt-principles/">gestalt principles</a>
 - 3D modelling
+- typography
 - the principles of animation
