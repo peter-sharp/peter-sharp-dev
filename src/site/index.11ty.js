@@ -28,9 +28,9 @@ module.exports.render = function index() {
   <section id="contactUs" class="wrapper">
     <div class="wrapper__inner p-note stack stack--gap-100">
         <h2>About</h2>
-        <p>Fullstack web developer living in <span class="p-country-name">New Zealand</span> with 4+ years experience designing, delivering and maintaining small to large scale websites and web apps.
+        <p>Fullstack web developer living in <span class="p-country-name">New Zealand</span> with 4+ years professional experience designing, delivering and maintaining small to large scale websites and web apps.
         </p>
-        <p>Being part designer, I care about crafting sites and apps with good user experience that excel in meeting their bottom line.</p>
+        <p>I care about crafting creative web solutions with good user experience that excel in meeting their bottom line.</p>
     </div>
   </section>
   <section id="contactUs" class="wrapper cta">
