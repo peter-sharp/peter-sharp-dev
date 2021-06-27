@@ -330,13 +330,6 @@ button {
     max-height: 80vh;
 }
 
-.card__image-clip {
-    box-sizing: border-box;
-    max-height: 18em;
-    overflow-y: hidden;
-    /* HACK fixes flexbox accounting for clipped contents */
-    width: 100%;
-}
 .card__title {
     color: #15181e;
     color: var(--color-grey-900);
