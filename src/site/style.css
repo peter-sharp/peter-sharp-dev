@@ -330,13 +330,6 @@ button {
     max-height: 80vh;
 }
 
-.card__image-clip {
-    box-sizing: border-box;
-    max-height: 18em;
-    overflow-y: hidden;
-    /* HACK fixes flexbox accounting for clipped contents */
-    width: 100%;
-}
 .card__title {
     color: #15181e;
     color: var(--color-grey-900);
@@ -366,8 +359,6 @@ button {
 /* end gallery*/
 
 .hero {
-    min-height: 70%;
-    min-height: 75vh;
     text-align: center;
     /* background: rgb(0,141,246); */
     /* background: linear-gradient(0deg, rgba(0,141,246,1) 0%, rgba(170,27,198,1) 35%, rgba(227,44,44,1) 65%, rgba(243,128,0,1) 100%); */
@@ -383,7 +374,7 @@ button {
 .sheep {
     width: 4em;
     left: calc(39.2% - 2em);
-    bottom: 14vh;
+    bottom: calc(21% - 1em);
     position: absolute;
 }
 
@@ -471,6 +462,6 @@ button {
   }
 
   .hero__svg-bg {
-    height: 80vh;
+    height: 50vh;
   }
 }
