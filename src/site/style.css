@@ -388,6 +388,7 @@ button {
 }
 
 .hero__cta {
+    box-sizing: border-box;
     position: absolute;
     width: 100%;
     max-width: 20em;
@@ -470,6 +471,6 @@ button {
   }
 
   .hero__svg-bg {
-    height: 88vh;
+    height: 80vh;
   }
 }
