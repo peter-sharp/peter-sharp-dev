@@ -33,21 +33,23 @@ module.exports.render = function index({ collections }) {
         <p>I care about crafting creative web solutions with good user experience that excel in meeting their bottom line.</p>
     </div>
   </section>
-  <section id="portfolio" class=" stack">
-    <header class="wrapper">
-      <h2 class="wrapper__inner">portfolio</h2>
-    </header>
-    <ul class="gallery">
-      ${collections.portfolio.map(x => /*html*/`<li class="card gallery__card">
-      <figure>
-        <img class="card__image" width="500" height="281" src="/assets/${x.data.link}.jpg"/>
-        <figcaption class="card__title stack stack--gap-100">
-          <h3><a class="card__link" href="https://${x.data.link}">${x.data.title}</a></h3>
-          <p>${x.data.subtitle}</p>
-        </figcaption>
-      <figure>
-      </li>`).join('\n')}
-    </ul>
+  <section id="portfolio">
+    <div class="stack">
+      <header class="wrapper">
+        <h2 class="wrapper__inner">portfolio</h2>
+      </header>
+      <ul class="gallery">
+        ${collections.portfolio.map(x => /*html*/`<li class="card gallery__card">
+        <figure>
+          <img class="card__image" width="500" height="281" src="/assets/${x.data.link}.jpg"/>
+          <figcaption class="card__title stack stack--gap-100">
+            <h3><a class="card__link" href="https://${x.data.link}">${x.data.title}</a></h3>
+            <p>${x.data.subtitle}</p>
+          </figcaption>
+        <figure>
+        </li>`).join('\n')}
+      </ul>
+    </div>
   </section>
   <section id="contactUs" class="wrapper cta">
     <div class="wrapper__inner">
