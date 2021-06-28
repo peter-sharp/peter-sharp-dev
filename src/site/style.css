@@ -1,5 +1,6 @@
 :root {
     --body-color: #350d71;
+    --size-content-width: 75rem;
 }
 
 
@@ -134,11 +135,14 @@ button {
 }
 
 .wrapper {
+    --margin: 1em;
     padding-left: 1em;
+    padding-left: var(--margin);
     padding-right: 1em;
-    padding-inline: 1em;
+    padding-right: var(--margin);
+    padding-inline: var(--margin);
 }
-
+/* TODO not really useful, remove */
 .wrapper--full-width {
     padding-left: 0;
     padding-right: 0;
@@ -150,6 +154,7 @@ button {
     margin-right: auto;
     margin-inline: auto;
     max-width: 75rem;
+    max-width: var(--size-content-width);
 }
 
 .image--responsive {
@@ -306,19 +311,28 @@ button {
 
 /* gallery */
 .gallery {
+    --margin: 1em;
     align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none;
-    padding-left: 0;
+    padding-right: 0.5em;
+    padding-right: calc( var(--margin) / 2);
+    padding-left: 0.5em;
+    padding-left: calc( var(--margin) / 2);
+    margin-left: auto;
+    margin-right: auto;
+    margin-inline: auto;
+    max-width: 76rem;
+    max-width: calc(var(--size-content-width) + var(--margin));
 }
 
 .gallery__card {
     flex: 1 0 18em;
-    width: 18em;
-    max-width: calc(50% - var(--gap));
+    max-width: 20em;
+    /* max-width: calc(50% - var(--gap)); */
 }
 .card {
     position: relative;
@@ -347,14 +361,14 @@ button {
     left: 0;
     width: 100%;
 }
-.gallery {
-    --gap: 3em;
-}
+
 .gallery__card {
-    margin-right: 3em;
-    margin-right: var(--gap);
-    margin-bottom: 3em;
-    margin-bottom: var(--gap);
+    margin-right: 0.5em;
+    margin-right: calc(var(--margin) / 2);
+    margin-left: 0.5em;
+    margin-left: calc(var(--margin) / 2);
+    margin-bottom: 1em;
+    margin-bottom: var(--margin);
 }
 /* end gallery*/
 
@@ -431,6 +445,7 @@ button {
     display: none;
 }
 
+/* TODO switch to mobile first query */
 @media all and (max-width: 600px) {
   .site-title__text {
     border: 0;
