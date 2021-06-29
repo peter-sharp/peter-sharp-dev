@@ -13,12 +13,12 @@ module.exports.render = function render({ collections }) {
         <section class="stack stack--gap-500">
             <div class="wrapper">
                 <div class="wrapper__inner  stack stack--gap-100">
-                    <h2>Micro-services</h2>
+                    <h2>Micro-jobs</h2>
                     <p>Want a quick illustration for a <strong>$20</strong>? Checkout these micro-services</p>
                 </div>
             </div>
             <ul class="gallery" size="thumbnail">
-            ${collections.microService.map(x => /*html*/`<li class="gallery__card card">
+            ${collections.microJob.map(x => /*html*/`<li class="gallery__card card">
                  <figure>
                     <img class="card__image" width="150" height="150" src="${x.data.thumbnail}"/>
                     <figcaption class="card__title stack stack--gap-100">
