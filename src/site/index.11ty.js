@@ -22,6 +22,7 @@ module.exports.render = function index({ collections }) {
         <li>Web apps</li>
         <li>Brochure websites</li>
         <li>Ecommerce websites</li>
+        <li><a href="/services/illustration" >Illustration</a></li>
       </ul>
     </div>
   </section>

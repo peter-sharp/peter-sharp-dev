@@ -1,6 +1,11 @@
 :root {
     --body-color: #350d71;
     --size-content-width: 75rem;
+    --color-primary: rgb(0,141,246);
+    --color-success: rgb(9, 223, 116);
+    --color-accent-1: rgb(170,27,198);
+    --color-accent-2: rgb(227,44,44);
+    --color-accent-3: rgb(243,128,0);
 }
 
 
@@ -110,15 +115,15 @@ button {
     margin-top: var(--gap, 1em);
 }
 
-.stack--gap-100 {
+.stack--gap-100 > * {
     --gap: 0.4em;
 }
 
 
-.stack--gap-500 {
+.stack--gap-500 > * {
     --gap: 2em;
 }
-.stack--gap-900 {
+.stack--gap-900 > * {
     --gap: 4em;
 }
 
@@ -329,11 +334,18 @@ button {
     max-width: calc(var(--size-content-width) + var(--margin));
 }
 
+.gallery[size="thumbnail"] {
+    --max-width: 150px;
+}
+
 .gallery__card {
-    flex: 1 0 18em;
-    max-width: 20em;
+    flex: 1 0 500px;
+    flex-basis: var(--max-width, 500px);
+    max-width: 500px;
+    max-width: var(--max-width, 500px);
     /* max-width: calc(50% - var(--gap)); */
 }
+
 .card {
     position: relative;
 }
@@ -429,7 +441,14 @@ button {
 }
 
 
-
+.price-badge {
+    background-color: rgb(9, 223, 116);
+    background-color: var(--color-success);
+    box-sizing: border-box;
+    border-radius: 999px;
+    padding: 0.3em;
+    display: inline-block;
+}
 
 .visually-hidden:not(:focus):not(:active) {
   clip: rect(0 0 0 0); 
