@@ -41,11 +41,11 @@ module.exports.render = function index({ collections }) {
       </header>
       <ul class="gallery">
         ${collections.portfolio.map(x => /*html*/`<li class="card gallery__card">
-        <figure>
+        <figure class="stack">
           <img class="card__image" width="500" height="281" src="/assets/${x.data.link}.jpg"/>
-          <figcaption class="card__title stack stack--gap-100">
-            <h3><a class="card__link" href="https://${x.data.link}">${x.data.title}</a></h3>
-            <p>${x.data.subtitle}</p>
+          <figcaption class="card__title">
+            <strong><a class="card__link" href="https://${x.data.link}">${x.data.title}</a></strong>
+            <span>${x.data.subtitle}</span>
           </figcaption>
         <figure>
         </li>`).join('\n')}
