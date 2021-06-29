@@ -2,7 +2,7 @@
 tags: ["illustration", "landscape"]
 title: Vector landscape
 price: 20
-currency: USD,
+currency: USD
 link: fourerr.com/ly37H
 thumbnail: /assets/mountain-banner-150x150.png
 ---

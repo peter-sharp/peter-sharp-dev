@@ -23,7 +23,7 @@ module.exports.render = function render({ collections }) {
                     <img class="card__image" width="150" height="150" src="${x.data.thumbnail}"/>
                     <figcaption class="card__title stack stack--gap-100">
                         <h3><a class="card__link" href="https://${x.data.link}">${x.data.title}</a></h3>
-                        <p class="price-badge">$${x.data.price}</p>
+                        <p class="price-badge">$${x.data.price} <strong>${x.data.currency}</strong></p>
                     </figcaption>
                     <figure>
             </li>`).join('\n')}
