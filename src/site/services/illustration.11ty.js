@@ -14,7 +14,7 @@ module.exports.render = function render({ collections }) {
             <div class="wrapper">
                 <div class="wrapper__inner  stack stack--gap-100">
                     <h2>Micro-jobs</h2>
-                    <p>Want a quick illustration for a <strong>$20</strong>? Checkout these micro-services</p>
+                    <p>Have a strict budget? Check out these micro-jobs.</p>
                 </div>
             </div>
             <ul class="gallery" size="thumbnail">
