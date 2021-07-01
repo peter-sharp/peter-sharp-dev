@@ -18,6 +18,7 @@ module.exports.render = function index({ collections }) {
   <section id="services" class="wrapper">
     <div class="wrapper__inner p-note stack stack--gap-100">
       <h2>Services</h2>
+      <p><small>Please note, only accepting clients from Oceania, Asia and Europe at this time.</small></p>
       <ul>
         <li>Web apps</li>
         <li>Brochure websites</li>
