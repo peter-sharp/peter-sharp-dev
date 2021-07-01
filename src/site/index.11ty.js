@@ -19,11 +19,11 @@ module.exports.render = function index({ collections }) {
     <div class="wrapper__inner p-note stack stack--gap-100">
       <h2>Services</h2>
       <p><small>Please note, only accepting clients from Oceania, Asia and Europe at this time.</small></p>
-      <ul>
-        <li>Web apps</li>
-        <li>Brochure websites</li>
-        <li>Ecommerce websites</li>
-        <li><a href="/services/illustration" >Illustration</a></li>
+      <ul class="unstyled-list">
+        <li class="emoji" emoji="rocket">Web apps</li>
+        <li class="emoji" emoji="page">Brochure websites</li>
+        <li class="emoji" emoji="shopping-cart">Ecommerce websites</li>
+        <li class="emoji" emoji="artist-palette"><a href="/services/illustration" >Illustration</a></li>
       </ul>
     </div>
   </section>

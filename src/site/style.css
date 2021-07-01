@@ -451,6 +451,26 @@ button {
     display: inline-block;
 }
 
+
+.emoji::before {
+    display: inline-block;
+    font-size: 2em;
+    margin-right: 1rem;
+}
+
+[emoji="rocket"]::before {
+    content: "🚀";
+}
+[emoji="page"]::before {
+    content: "📄";
+}
+[emoji="shopping-cart"]::before {
+    content: "🛒";
+}
+[emoji="artist-palette"]::before {
+    content: "🎨";
+}
+
 .visually-hidden:not(:focus):not(:active) {
   clip: rect(0 0 0 0); 
   clip-path: inset(50%);
