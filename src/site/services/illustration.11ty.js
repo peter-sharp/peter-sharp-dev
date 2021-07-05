@@ -1,3 +1,5 @@
+const imageComparison = require('../_includes/components/imageComparison.js');
+
 module.exports.data = {
     title: "Illustration"
 };
@@ -19,13 +21,15 @@ module.exports.render = function render({ collections }) {
             </div>
             <ul class="gallery" size="thumbnail">
             ${collections.microJob.map(x => /*html*/`<li class="gallery__card card">
-                 <figure>
-                    <img class="card__image" width="150" height="150" src="${x.data.thumbnail}"/>
+                 <figure class="stack stack--gap-100">
+                    ${'imageComparison' in x.data ?
+                    imageComparison(x.data.imageComparison.imageA, x.data.imageComparison.imageB) :
+                    /*html*/`<img class="card__image" width="150" height="150" src="${x.data.thumbnail}"/>`}
                     <figcaption class="card__title stack stack--gap-100">
                         <h3><a class="card__link" href="https://${x.data.link}">${x.data.title}</a></h3>
                         <p class="price-badge">$${x.data.price} <strong>${x.data.currency}</strong></p>
                     </figcaption>
-                    <figure>
+                    </figure>
             </li>`).join('\n')}
             </ul>
         </section>

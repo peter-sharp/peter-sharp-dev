@@ -1,0 +1,23 @@
+.image-comparison {
+    --percent: 50%;
+    position: relative;
+    width: var(--width, 150px);
+    height: var(--height, 150px);
+    z-index: 10;
+}
+.image-comparison__imageA,
+.image-comparison__imageB{
+    width: 100%;
+    height: 100%;
+    background: grey;
+    position: absolute;
+}
+
+.image-comparison__imageA {
+    background: royalblue;
+}
+
+.image-comparison__imageB {
+    background: crimson;
+    clip-path: polygon(0% 0%, var(--percent) 0%, var(--percent) 100%, 0% 100%);
+}

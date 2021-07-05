@@ -20,6 +20,8 @@ module.exports = function({ site, title, page, content, description = '', collec
             <meta property="og:image" content="https://${site.url}/social-media-banner.png" />
             <meta property="og:site_name" content="${site.title}" />
             <meta property="og:description" content="${description}" />
+            <script type="module" src="/assets/imageComparison.js"></script>
+            <link rel="stylesheet" href="/assets/imageComparison.css"/>
             <script src="https://getinsights.io/js/insights.js"></script>
             <script>
                 insights.init("${site.insightId}")
