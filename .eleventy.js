@@ -1,6 +1,7 @@
 require('dotenv').config();
 
 const siteNav = require('./src/site/_includes/collections/siteNav.js');
+const galleryShortcode = require('./src/site/_includes/components/gallery.js');
 const generateResumePDF = require("./scripts/generate-resume-PDF.js");
 const generatePortfolioImages = require("./scripts/generate-portfolio-images.js");
 
@@ -27,6 +28,8 @@ module.exports = function eleventyConfig(config) {
             return collectionApi.getFilteredByTags("education", "history", cvType).reverse();
         });
     }
+
+    config.addShortcode('gallery', galleryShortcode);
 
     config.on('afterBuild', async () => {
         try {

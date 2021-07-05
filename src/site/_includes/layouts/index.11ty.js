@@ -22,6 +22,7 @@ module.exports = function({ site, title, page, content, description = '', collec
             <meta property="og:description" content="${description}" />
             <script type="module" src="/assets/imageComparison.js"></script>
             <link rel="stylesheet" href="/assets/imageComparison.css"/>
+            <link rel="stylesheet" href="/assets/gallery.css"/>
             <script src="https://getinsights.io/js/insights.js"></script>
             <script>
                 insights.init("${site.insightId}")
