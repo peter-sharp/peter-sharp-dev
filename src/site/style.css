@@ -338,6 +338,10 @@ button {
     --max-width: 150px;
 }
 
+.gallery[justify="start"] {
+    justify-content: flex-start;
+}
+
 .gallery__card {
     flex: 1 1 500px;
     flex-basis: var(--max-width, 500px);

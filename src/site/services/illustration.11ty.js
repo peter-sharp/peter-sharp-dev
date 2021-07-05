@@ -19,7 +19,7 @@ module.exports.render = function render({ collections }) {
                     <p>Have a strict budget? Check out these micro-jobs.</p>
                 </div>
             </div>
-            <ul class="gallery" size="thumbnail">
+            <ul class="gallery" size="thumbnail" justify="start">
             ${collections.microJob.map(x => /*html*/`<li class="gallery__card card">
                  <figure class="stack stack--gap-100">
                     ${'imageComparison' in x.data ?
