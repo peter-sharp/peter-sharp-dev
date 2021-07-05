@@ -33,15 +33,17 @@ module.exports = function eleventyConfig(config) {
     config.addShortcode('gallery', galleryShortcode);
 
     config.on('afterBuild', async () => {
-        try {
-            await generateResumePDF();
-            console.info('resume PDF generated');
-        } catch (e) {
-            console.error(e);
-        }
+       
         try {
             await generatePortfolioImages();
             console.info('portfolio images generated');
+        } catch (e) {
+            console.error(e);
+        }
+
+        try {
+            await generateResumePDF();
+            console.info('resume PDF generated');
         } catch (e) {
             console.error(e);
         }
