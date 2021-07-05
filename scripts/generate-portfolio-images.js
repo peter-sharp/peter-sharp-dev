@@ -18,15 +18,16 @@ module.exports = async function generatePortfolioImages() {
     const images = await Promise.all(links.map(async link => {
         const page = await browser.newPage();
         const imgPath = path.resolve('_site/assets', `${link}.jpg`);
+        const portfolioDest = path.resolve('_site/resume', `${link}.jpg`);
         try {
             await page.goto(`https://${link}`);
             await page.screenshot({ width: 500, height: 500, type: 'jpeg', path: imgPath });
             // copy to resume 
-            await copyFile(imgPath, path.resolve('_site/resume', `${link}.jpg`));
+            await copyFile(imgPath, portfolioDest);
         } catch (e) {
             return new Error(`failed to screenshot ${link}`);
         }
-        return imgPath;
+        return [imgPath, portfolioDest];
     }));
     images.forEach(unary(console.info));
     await browser.close();
