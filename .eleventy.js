@@ -14,6 +14,7 @@ module.exports = function eleventyConfig(config) {
 
     config.addPassthroughCopy('src/site/style.css');
     config.addPassthroughCopy('src/site/assets');
+    config.addPassthroughCopy({'src/site/assets/gallery.css' : 'resume/gallery.css'});
     config.addPassthroughCopy('src/site/resume/*.css');
     config.addPassthroughCopy('src/site/favicon.svg');
     config.addPassthroughCopy('src/site/social-media-banner.png');

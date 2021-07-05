@@ -3,7 +3,7 @@ const { chromium } = require('playwright-chromium');
 const path = require('path');
 const  { unary } = require('ramda');
 const graymatter = require('gray-matter');
-const { readFile, readdir } = require('fs').promises;
+const { readFile, readdir, copyFile } = require('fs').promises;
 
 module.exports = async function generatePortfolioImages() {
     const files = await (await readdir(path.resolve('src/site/portfolio'))).filter(x => x.includes('.md'));
@@ -21,6 +21,8 @@ module.exports = async function generatePortfolioImages() {
         try {
             await page.goto(`https://${link}`);
             await page.screenshot({ width: 500, height: 500, type: 'jpeg', path: imgPath });
+            // copy to resume 
+            await copyFile(imgPath, path.resolve('_site/resume', `${link}.jpg`));
         } catch (e) {
             return new Error(`failed to screenshot ${link}`);
         }
