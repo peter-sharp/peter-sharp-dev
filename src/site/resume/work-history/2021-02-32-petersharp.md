@@ -10,7 +10,7 @@ Started a Web development side hustle while working full-time for Barkers (throu
 While I have had a few propective clients, this has mostly been a time of learning.
 
 Things I learnt:
- - The value of cold-call/email marketing
+ - Cold-call/email marketing techniques
  - The difference between an estimate, a quote and a proposal
  - Strategies for minimizing risk in business
  - How to set up and use a sales-pipeline
