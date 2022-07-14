@@ -8,7 +8,7 @@ tags: ["general"]
 Worked at Hamilton Jet through Coverstaff as a fettler and packer.
 Took a short corse on crane operation.
 
-Duties included:
+Primary responsibilities:
 
 - Deburring castings
 - Crane operation for moving large parts

@@ -7,7 +7,7 @@ tags: ["general"]
 Worked as a shelf filler and auditor.
 Initially started auditing repack orders then was trusted to audit bulk orders.
 
-Duties included:
+Primary responsibilities:
 
 - Filling repack shelves with break bulk
 - Auditing repack and bulk orders
