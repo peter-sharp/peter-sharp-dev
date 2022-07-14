@@ -2,8 +2,6 @@ require('dotenv').config();
 
 const siteNav = require('./src/site/_includes/collections/siteNav.js');
 const galleryShortcode = require('./src/site/_includes/components/gallery.js');
-const generateResumePDF = require("./scripts/generate-resume-PDF.js");
-const generatePortfolioImages = require("./scripts/generate-portfolio-images.js");
 
 const svgContents = require("eleventy-plugin-svg-contents");
 
@@ -33,6 +31,16 @@ module.exports = function eleventyConfig(config) {
     config.addShortcode('gallery', galleryShortcode);
 
     config.on('afterBuild', async () => {
+        let generateResumePDF;
+        let generatePortfolioImages;
+        try {
+            generateResumePDF = require("./scripts/generate-resume-PDF.js");
+            generatePortfolioImages = require("./scripts/generate-portfolio-images.js");
+            console.info('post install scripts loaded');
+        } catch(e) {
+            console.error(e);
+            return;
+        }
        
         try {
             await generatePortfolioImages();
