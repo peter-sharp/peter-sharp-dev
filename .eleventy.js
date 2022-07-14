@@ -19,12 +19,15 @@ module.exports = function eleventyConfig(config) {
 
     config.addCollection('siteNav', siteNav);
 
+    function byStartDate (a, b) {
+      return b.data.start - a.data.start; // sort by date - descending);
+    }
     for(let cvType of ['it', 'general']) {
         config.addCollection(`${cvType}Work`, function(collectionApi) {
-            return collectionApi.getFilteredByTags("work", "history", cvType).reverse();
+            return collectionApi.getFilteredByTags("work", "history", cvType).sort(byStartDate);
         });
         config.addCollection(`${cvType}Education`, function(collectionApi) {
-            return collectionApi.getFilteredByTags("education", "history", cvType).reverse();
+            return collectionApi.getFilteredByTags("education", "history", cvType).sort(byStartDate);
         });
     }
 
