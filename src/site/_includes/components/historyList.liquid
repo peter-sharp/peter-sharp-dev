@@ -12,7 +12,7 @@
     {% for item in collections[collection] %}
     <li>
         <h3>{{item.data.title}}</h3>
-        <h4 class="subheader">{{item.data.start | date: "%d/%m/%Y"}} - {% if item.data.end %}{{item.data.end | date: "%d/%m/%Y"}}{% else %}Current{% endif %}</h4>
+        <h4 class="subheader">{{item.data.start | date: "%m/%Y"}} - {% if item.data.end %}{{item.data.end | date: "%m/%Y"}}{% else %}Current{% endif %}</h4>
         {{item.templateContent}}
     </li>
     {% endfor %}
