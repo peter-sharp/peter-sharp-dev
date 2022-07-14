@@ -29,7 +29,7 @@ module.exports.render = function index({ collections }) {
   <section id="about" class="wrapper">
     <div class="wrapper__inner p-note stack stack--gap-100">
         <h2>About</h2>
-        <p>Fullstack web developer living in <span class="p-country-name">New Zealand</span> with 4+ years professional experience designing, delivering and maintaining small to large scale websites and web apps.
+        <p>Fullstack web developer living in Montana <span class="p-country-name">USA</span> with 5+ years professional experience designing, delivering and maintaining small to large scale websites and web apps.
         </p>
         <p>I care about crafting creative web solutions with good user experience that excel in meeting their bottom line.</p>
     </div>
