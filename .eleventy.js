@@ -55,8 +55,9 @@ module.exports = function eleventyConfig(config) {
         }
 
         try {
-            await generateResumePDF();
-            console.info('resume PDF generated');
+            await generateResumePDF('resume');
+            await generateResumePDF('resume/gen');
+            console.info('resume PDFs generated');
         } catch (e) {
             console.error(e);
         }
