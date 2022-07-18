@@ -1,10 +1,10 @@
 ---
 title: Barkers
 start: 2021-01-25
-end: 
+end: 2021-04-13
 tags: ["general"]
 ---
-Worked at Barkers through Stafford.
+Worked at Barkers, a producer of jams, juices and preserves through Stafford recruitment agency.
 
 Primary responsibilities:
 

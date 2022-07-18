@@ -1,6 +1,6 @@
 ---
 title: Freelancing
-start: 2021-02-31
+start: 2021-03-01
 end: 2021-08-31
 tags: ["it"]
 ---

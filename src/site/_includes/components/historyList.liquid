@@ -13,7 +13,7 @@
     <li>
         <h3>{{item.data.title}}</h3>
         <h4 class="subheader">{{item.data.start | date: "%m/%Y"}} - {% if item.data.end %}{{item.data.end | date: "%m/%Y"}}{% else %}Current{% endif %}</h4>
-        {{item.templateContent}}
+        {{ item.templateContent }}
     </li>
     {% endfor %}
 </ul>
