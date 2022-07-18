@@ -4,6 +4,7 @@ const siteNav = require('./src/site/_includes/collections/siteNav.js');
 const galleryShortcode = require('./src/site/_includes/components/gallery.js');
 
 const svgContents = require("eleventy-plugin-svg-contents");
+const copy = require("recursive-copy");
 
 module.exports = function eleventyConfig(config) {
     config.setDataDeepMerge(true);
@@ -13,9 +14,7 @@ module.exports = function eleventyConfig(config) {
     config.addPassthroughCopy('src/site/style.css');
     config.addPassthroughCopy('src/site/assets');
     config.addPassthroughCopy({'src/site/assets/gallery.css' : 'resume/gallery.css'});
-    config.addPassthroughCopy({'src/site/assets/gallery.css' : 'resume/gen/gallery.css'});
     config.addPassthroughCopy('src/site/resume/*.css');
-    config.addPassthroughCopy({'src/site/resume/*.css': 'resume/gen'});
     config.addPassthroughCopy('src/site/favicon.svg');
     config.addPassthroughCopy('src/site/social-media-banner.png');
 
@@ -56,7 +55,11 @@ module.exports = function eleventyConfig(config) {
 
         try {
             await generateResumePDF('resume');
+
+            await copy('src/site/assets/gallery.css', '_site/resume/gen/gallery.css', { overwrite: true });
+            await copy('src/site/resume', '_site/resume/gen', { filter: '*.css', overwrite: true });
             await generateResumePDF('resume/gen');
+            
             console.info('resume PDFs generated');
         } catch (e) {
             console.error(e);

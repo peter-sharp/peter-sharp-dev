@@ -17,6 +17,7 @@
     "eleventy-plugin-svg-contents": "^0.7.0",
     "gray-matter": "^4.0.3",
     "playwright-chromium": "^1.10.0",
-    "ramda": "^0.27.1"
+    "ramda": "^0.27.1",
+    "recursive-copy": "^2.0.14"
   }
 }
