@@ -14,7 +14,7 @@ module.exports.render = function index({ collections }) {
     ${this.svgContents('/src/site/mountain-banner-sheep.svg')}
     <div class="wrapper__inner hero__cta stack">
       <h2 class="hero__message">Simple, effective web apps and&nbsp;websites</h2>
-      <a class="button cta__button" href="/contact" data-state="inverted">Contact me</a>
+      <a class="button hero__button" href="/contact" data-state="inverted">Contact me</a>
     </div>
   </header>
   <section id="services" class="wrapper">
@@ -55,9 +55,9 @@ module.exports.render = function index({ collections }) {
     </div>
   </section>
   <section id="contactUs" class="wrapper cta">
-    <div class="wrapper__inner">
+    <div class="wrapper__inner stack stack--gap-100">
       <p>Make an enquiry</p>
-      <a class="button" href="/contact">Contact me</a>
+      <a class="cta__button button" href="/contact" data-state="inverted">Contact me</a>
     </div>
   </section>
   `;

@@ -365,23 +365,39 @@ button {
 
 .cta {
     align-items: center;
+    background: linear-gradient(2deg, var(--color-primary), var(--color-accent-1));
+    color: #fff;
     display: flex;
-    min-height: 15%;
-    min-height: 15vh;
+    min-height: 10rem;
+    height: 33%;
+    height: 33vh;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
+.hero__button,
 .cta__button {
-    --background: #bb3396;
-    /* background-color: #bb3396;
-    background-color: var(--background); */
-    border-color: #bb3396;
-    border-color: var(--background);
     font-weight: bolder;
     font-size: 1.3em;
 }
 
+.hero__button {
+    border-color: #bb3396;
+    border-color: var(--background, #bb3396);
+}
+.cta__button {
+    border-color: rgba(255,255,255, 0.2);
+    border-color: var(--background, rgba(255,255,255, 0.2));
+    
+}
+
 .cta__button:hover,
 .cta__button:focus {
+    --background: rgba(255,255,255, 0.4);
+}
+
+.hero__button:hover,
+.hero__button:focus {
     --background: #c74475;
 }
 
