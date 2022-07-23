@@ -13,6 +13,22 @@ html, body {
     height: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    line-height: 1;
+}
+
+p,
+ul,
+figure {
+    margin: 0;
+}
+
 body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 112.5%;
@@ -55,20 +71,7 @@ a:active {
     color: #f94;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-    line-height: 1;
-}
 
-ul,
-figure {
-    margin: 0;
-}
 
 .button,
 button {
