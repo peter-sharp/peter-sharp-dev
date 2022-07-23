@@ -55,7 +55,7 @@ module.exports = function({ site, title, page, content, description = '', collec
                   </ul>
               </nav>
           </header>
-          <main class="sticky-footer__content stack stack--gap-900 pad-bottom-900">
+          <main class="sticky-footer__content stack stack--gap-900">
               ${content}
           </main>
           <footer class="wrapper site-footer sticky-footer__footer">

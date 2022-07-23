@@ -7,7 +7,7 @@ module.exports.data = {
 
 module.exports.render = function contact() {
   return /*html*/`
-    <form name="contact" netlify action="/contact/success" netlify-honeypot="address" class="wrapper pad-top-900">
+    <form name="contact" netlify action="/contact/success" netlify-honeypot="address" class="wrapper pad-top-900 pad-bottom-900">
       <div class="wrapper__inner stack stack--gap-100">
         <h1>Contact</h1>
         <p class="form-group">

@@ -6,7 +6,7 @@ module.exports.data = {
 
 module.exports.render = function contact() {
   return /*html*/`
-    <div class="wrapper  pad-top-900">
+    <div class="wrapper  pad-top-900 pad-bottom-900">
       <div class="wrapper__inner stack stack--gap-100">
         <h1>Contact</h1>
         <p class="">
