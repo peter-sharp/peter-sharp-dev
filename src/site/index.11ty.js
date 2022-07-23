@@ -18,7 +18,7 @@ module.exports.render = function index({ collections }) {
     </div>
   </header>
   <section id="services" class="wrapper">
-    <div class="wrapper__inner p-note stack stack--gap-100">
+    <div class="wrapper__inner p-note stack stack--gap-500">
       <h2>Services</h2>
       <ul class="unstyled-list">
         <li class="emoji" emoji="rocket">Web apps</li>
@@ -29,7 +29,7 @@ module.exports.render = function index({ collections }) {
     </div>
   </section>
   <section id="about" class="wrapper">
-    <div class="wrapper__inner p-note stack stack--gap-100">
+    <div class="wrapper__inner p-note stack stack--gap-500">
         <h2>About</h2>
         <p>Fullstack web developer living in Montana <span class="p-country-name">USA</span> with 5+ years professional experience designing, delivering and maintaining small to large scale websites and web apps.
         </p>
@@ -37,7 +37,7 @@ module.exports.render = function index({ collections }) {
     </div>
   </section>
   <section id="portfolio">
-    <div class="stack">
+    <div class="stack stack--gap-500">
       <header class="wrapper">
         <h2 class="wrapper__inner">portfolio</h2>
       </header>
@@ -46,7 +46,7 @@ module.exports.render = function index({ collections }) {
         <figure class="stack">
           <img class="card__image" width="500" height="281" src="/assets/${slugify(x.data.link)}.jpg"/>
           <figcaption class="card__title">
-            <strong><a class="card__link" href="${x.data.link.startsWith('/') ? x.data.link : `https://${x.data.link}`}">${x.data.title}</a></strong>
+            <h3><a class="card__link" href="${x.data.link.startsWith('/') ? x.data.link : `https://${x.data.link}`}">${x.data.title}</a></h3>
             <span>${x.data.subtitle}</span>
           </figcaption>
         <figure>
