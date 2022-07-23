@@ -18,6 +18,8 @@ module.exports = function eleventyConfig(config) {
     config.addPassthroughCopy('src/site/favicon.svg');
     config.addPassthroughCopy('src/site/social-media-banner.png');
 
+    config.addPassthroughCopy('src/site/portfolio-demos/bitprime-about-us/About Us _ BitPrime_files');
+
     config.addCollection('siteNav', siteNav);
 
     function byStartDate (a, b) {

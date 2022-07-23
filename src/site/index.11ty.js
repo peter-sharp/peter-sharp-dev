@@ -44,7 +44,7 @@ module.exports.render = function index({ collections }) {
         <figure class="stack">
           <img class="card__image" width="500" height="281" src="/assets/${x.data.link}.jpg"/>
           <figcaption class="card__title">
-            <strong><a class="card__link" href="https://${x.data.link}">${x.data.title}</a></strong>
+            <strong><a class="card__link" href="${x.data.link.startsWith('/') ? x.data.link : `https://${x.data.link}`}">${x.data.title}</a></strong>
             <span>${x.data.subtitle}</span>
           </figcaption>
         <figure>

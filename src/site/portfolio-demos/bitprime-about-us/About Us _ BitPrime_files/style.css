@@ -1,0 +1,264 @@
+.bp-reset-margins > *:last-child, /* overwrites p:last-child */
+.bp-reset-margins > * {
+    margin-bottom: 0;
+}
+
+.bp-stack > * + *:not(.bp-stack__excluded) {
+    margin-top: 2em;
+}
+
+.bp-stack[data-gap="small"]>*+*:not(.bp-stack__excluded) {
+    margin-top: 1em;
+}
+.bp-stack[data-gap="tiny"]>*+*:not(.bp-stack__excluded) {
+    margin-top: 0.3em;
+}
+
+.bp-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.bp-row[data-align="center"] {
+    align-items: center;
+}
+
+.bp-row>*+* {
+    margin-left: 1.3em;
+}
+
+.bp-row[data-gap="large"]>*+* {
+    margin-left: 2.6em;
+}
+
+.bp-row__item[data-size="small"] {
+    min-width: 14em;
+    width: 33vw;
+    max-width: 18em;
+}
+
+.bp-flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.bp-flex-grid > *,
+.bp-row > * {
+	display: inline-block;
+}
+
+.bp-flex-grid > * {
+    /* safari fix */
+    margin-bottom: 1.3em;
+	margin-right: 1.3em;
+}
+
+.bp-cover-link {
+    position: relative;
+}
+.bp-cover-link__link::after {
+    bottom: 0;
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.bp-figure {
+    padding-bottom: 1em;
+}
+
+.bp-figure[data-display="card"],
+.bp-figure[data-display="card-full-width"] {
+    background: #f2f0ec;
+    border-radius: 0.5em;
+    min-height: 11em;
+}
+
+.bp-figure[data-display="card-full-width"] {
+    overflow-x: hidden;
+}
+
+.bp-figure__wrapper {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.bp-figure__link {
+    color: inherit;
+}
+
+.bp-figure__link:focus,
+.bp-figure__link:hover {
+    color: inherit;
+    opacity: 0.7;
+}
+
+.bp-star-rating {
+    font-size: 1.8em;
+    font-style: normal;
+    color: #fff;
+    font-weight: 900;
+    word-wrap: unset;
+}
+
+.bp-star-rating > * + * {
+    margin-left: 0.1em;
+}
+
+.bp-star-rating__star {
+    --size: 1.4em;
+    box-shadow: 0 4px 3px rgb(70 0 70 / 50%);
+    background-color: #5b178d;
+    background-color: var(--color-primary-500);
+    display: inline-block;
+    width: 1.4em;
+    width: var(--size);
+    height: 1.4em;
+    height: var(--size);
+    border-radius: 0.2em;
+    text-align: center;
+}
+
+.bp-star-rating__star::before {
+    content: ' ';
+    display: inline-block;
+    width: 0;
+    height: 1.6em;
+    height: calc(var(--size) + 0.2em);
+    vertical-align: middle;
+}
+
+
+.bp-review__cite {
+    font-size: 1.3em;
+}
+
+.bp-review__quote {
+    font-size: 1em;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bp-h-scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.bp-h-overflow-indicator {
+    position: relative;
+}
+
+.bp-h-overflow-indicator::after {
+    position: absolute;
+    content: ' ';
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1.5em;
+    background-image: linear-gradient(90deg, transparent, rgba(20, 10, 100, 0.05));
+}
+
+.bp-inline-block {
+    display: inline-block;
+}
+
+.bp-list-unstyled {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.bp-img[data-height="small"] {
+    height: 2.3em;
+    width: auto;
+    max-width: none;
+}
+
+.h5 {
+    font-size: 19px;
+}
+
+.bp-small {
+    font-size: 0.8em;
+    line-height: 1.1;
+}
+
+.bp-text-centered {
+    text-align: center;
+}
+
+.bp-branded-frame {
+    background-color: #999ccc;
+    background-image: linear-gradient(#999ccc, var(--color-primary-600));
+    border-radius: 999px;
+}
+
+@supports(clip-path: url(#branded-frame-clip)) {
+    .bp-branded-frame {
+        clip-path: var(--branded-frame-variation, url('#branded-frame-clip-0'));
+        border-radius: 0;
+    }
+}
+
+
+.bp-duo-img-wrapper[data-lightness="light"] {
+    --base: #ababd4;
+}
+
+@media screen and (max-width: 500px) {
+    .bp-flex-grid[data-grid-size="large"] {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: 1fr;
+    }
+}
+
+.bp-pad-b-100 {
+    padding-bottom: 1em;
+}
+.bp-pad-r-100 {
+    padding-right: 1em;
+}
+
+.bp-pad-t-200 {
+    padding-top: 2em;
+}
+
+/*HACKS  */
+.elementor .bp-branded-frame {
+    border-radius: 999px;
+}
+
+@supports(clip-path: url(#branded-frame-clip)) {
+    .elementor .bp-branded-frame {
+        border-radius: 0;
+    }
+}
+
+.bp-force-remove-padding {
+    padding: 0 !important;
+}
+
+.elementor .bp-portrait,
+.bp-portrait {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+}
+
+.bp-offscreen {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
