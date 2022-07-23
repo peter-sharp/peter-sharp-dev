@@ -1,3 +1,5 @@
+const slugify = require('slugify')
+
 module.exports.data = {
   layout: 'layouts/index.11ty.js',
   title: 'Home',
@@ -42,7 +44,7 @@ module.exports.render = function index({ collections }) {
       <ul class="gallery">
         ${collections.portfolio.map(x => /*html*/`<li class="card gallery__card">
         <figure class="stack">
-          <img class="card__image" width="500" height="281" src="/assets/${x.data.link}.jpg"/>
+          <img class="card__image" width="500" height="281" src="/assets/${slugify(x.data.link)}.jpg"/>
           <figcaption class="card__title">
             <strong><a class="card__link" href="${x.data.link.startsWith('/') ? x.data.link : `https://${x.data.link}`}">${x.data.title}</a></strong>
             <span>${x.data.subtitle}</span>

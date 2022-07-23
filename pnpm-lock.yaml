@@ -8,6 +8,7 @@ specifiers:
   playwright-chromium: ^1.10.0
   ramda: ^0.27.1
   recursive-copy: ^2.0.14
+  slugify: ^1.6.5
 
 devDependencies:
   '@11ty/eleventy': 0.11.1
@@ -17,6 +18,7 @@ devDependencies:
   playwright-chromium: 1.23.4
   ramda: 0.27.1
   recursive-copy: 2.0.14
+  slugify: 1.6.5
 
 packages:
 
@@ -58,7 +60,7 @@ packages:
       pug: 2.0.4
       recursive-copy: 2.0.14
       semver: 7.3.5
-      slugify: 1.5.3
+      slugify: 1.6.5
       time-require: 0.1.2
       valid-url: 1.0.9
     transitivePeerDependencies:
@@ -2065,8 +2067,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /slugify/1.5.3:
-    resolution: {integrity: sha512-/HkjRdwPY3yHJReXu38NiusZw2+LLE2SrhkWJtmlPDB1fqFSvioYj62NkPcrKiNCgRLeGcGK7QBvr1iQwybeXw==}
+  /slugify/1.6.5:
+    resolution: {integrity: sha512-8mo9bslnBO3tr5PEVFzMPIWwWnipGS0xVbYf65zxDqfNwmzYn1LpiKNrR6DlClusuvo+hDHd1zKpmfAe83NQSQ==}
     engines: {node: '>=8.0.0'}
     dev: true
 
