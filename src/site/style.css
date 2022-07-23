@@ -343,9 +343,6 @@ button {
 }
 
 .hero__cta {
-    --corner: 1.3em;
-    clip-path: polygon(0 0, calc(100% - 1.3em) 0, 100% 1.3em, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, calc(100% - var(--corner)) 0, 100% var(--corner), 100% 100%, 0 100%);
     box-sizing: border-box;
     position: absolute;
     width: 100%;
