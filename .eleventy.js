@@ -60,6 +60,7 @@ module.exports = function eleventyConfig(config) {
 
             await copy('src/site/assets/gallery.css', '_site/resume/gen/gallery.css', { overwrite: true });
             await copy('src/site/resume', '_site/resume/gen', { filter: '*.css', overwrite: true });
+            await copy('src/site/resume', '_site/resume/nz', { filter: '*.css', overwrite: true });
             await generateResumePDF('resume/gen');
             
             console.info('resume PDFs generated');
