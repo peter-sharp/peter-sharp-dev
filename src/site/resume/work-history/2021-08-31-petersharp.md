@@ -7,7 +7,7 @@ tags: ["it"]
 Started a Web development side hustle while working full-time for Barkers (through Stafford recruitment) and the Fairlie Bakehouse. From June 2021 I started developing my freelance business full-time.
 
 
-While I had a few propective clients, this has mostly been a time of learning.
+While I had a few prospective clients, this was mostly a time of learning.
 
 Primary responsibilities:
 - Self promotion
