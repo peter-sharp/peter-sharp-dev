@@ -16,9 +16,13 @@
     "dotenv": "^8.2.0",
     "eleventy-plugin-svg-contents": "^0.7.0",
     "gray-matter": "^4.0.3",
+    "js-yaml": "^4.1.0",
     "playwright-chromium": "^1.10.0",
     "ramda": "^0.27.1",
     "recursive-copy": "^2.0.14",
     "slugify": "^1.6.5"
+  },
+  "dependencies": {
+    "nanoid": "^4.0.0"
   }
 }

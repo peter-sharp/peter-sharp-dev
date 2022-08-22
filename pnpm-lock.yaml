@@ -5,16 +5,22 @@ specifiers:
   dotenv: ^8.2.0
   eleventy-plugin-svg-contents: ^0.7.0
   gray-matter: ^4.0.3
+  js-yaml: ^4.1.0
+  nanoid: ^4.0.0
   playwright-chromium: ^1.10.0
   ramda: ^0.27.1
   recursive-copy: ^2.0.14
   slugify: ^1.6.5
+
+dependencies:
+  nanoid: 4.0.0
 
 devDependencies:
   '@11ty/eleventy': 1.0.2
   dotenv: 8.2.0
   eleventy-plugin-svg-contents: 0.7.0
   gray-matter: 4.0.3
+  js-yaml: 4.1.0
   playwright-chromium: 1.23.4
   ramda: 0.27.1
   recursive-copy: 2.0.14
@@ -1211,6 +1217,13 @@ packages:
       esprima: 4.0.1
     dev: true
 
+  /js-yaml/4.1.0:
+    resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
+    hasBin: true
+    dependencies:
+      argparse: 2.0.1
+    dev: true
+
   /jsonfile/3.0.1:
     resolution: {integrity: sha512-oBko6ZHlubVB5mRFkur5vgYR1UyqX+S6Y/oCfLhqNdcc2fYFlDpIoNc7AfKS1KOGcnNAkvsr0grLck9ANM815w==}
     optionalDependencies:
@@ -1424,6 +1437,12 @@ packages:
     resolution: {integrity: sha512-71ippSywq5Yb7/tVYyGbkBggbU8H3u5Rz56fH60jGFgr8uHwxs+aSKeqmluIVzM0m0kB7xQjKS6qPfd0b2ZoqQ==}
     hasBin: true
     dev: true
+
+  /nanoid/4.0.0:
+    resolution: {integrity: sha512-IgBP8piMxe/gf73RTQx7hmnhwz0aaEXYakvqZyE302IXW3HyVNhdNGC+O2MwMAVhLEnvXlvKtGbtJf6wvHihCg==}
+    engines: {node: ^14 || ^16 || >=18}
+    hasBin: true
+    dev: false
 
   /negotiator/0.6.2:
     resolution: {integrity: sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==}
