@@ -22,18 +22,18 @@ description: |
     </p>
 </section>
 <section class="wrapper">
-    {% include components/skillList %}
+    {% include 'components/skillList' %}
 </section>
 <div class="wrapper">
     <div class="columns">
         <section class="column-1-2">
-            {% include components/historyList, title: 'Work', collection: 'generalWork', icon: 'work' %}
+            {% include 'components/historyList', title: 'Work', collection: 'generalWork', icon: 'work' %}
         </section>
         <section class="column-1-2">
-            {% include components/historyList, title: 'Education', collection: 'generalEducation', icon: 'education' %}
+            {% include 'components/historyList', title: 'Education', collection: 'generalEducation', icon: 'education' %}
         </section>
     </div>
 </div>
 <section class="wrapper">
-    {% include components/interestList %}
+    {% include 'components/interestList' %}
 </section>

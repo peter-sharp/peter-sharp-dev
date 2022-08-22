@@ -2,3 +2,5 @@ node_modules
 _site
 .env
 *.log
+src/site/private
+src/site/_includes/private

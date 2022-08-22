@@ -6,10 +6,18 @@ const galleryShortcode = require('./src/site/_includes/components/gallery.js');
 const svgContents = require("eleventy-plugin-svg-contents");
 const copy = require("recursive-copy");
 
+let private;
+try {
+    private = require("./private/.eleventy.js");
+} catch(e) {
+    console.log('Failed to load private module...');
+}
+
 module.exports = function eleventyConfig(config) {
     config.setDataDeepMerge(true);
 
     config.addPlugin(svgContents);
+    if(private) config.addPlugin(private);
 
     config.addPassthroughCopy('src/site/style.css');
     config.addPassthroughCopy('src/site/assets');
@@ -70,7 +78,9 @@ module.exports = function eleventyConfig(config) {
     });
 
     config.addWatchTarget("./src/site/mountain-banner.svg");
-
+   
+    config.setUseGitIgnore(false);
+    
     return {
         dir: {
             input: 'src/site'
