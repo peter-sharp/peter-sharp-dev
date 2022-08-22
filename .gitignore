@@ -4,4 +4,5 @@ _site
 *.log
 src/site/private
 src/site/_includes/private
+src/site/_data/private
 .netlify
