@@ -12,7 +12,20 @@ try {
 } catch(e) {
     console.log('Failed to load private module...');
 }
-
+/**
+ * Configues petersharp.dev site:
+ *  - adds svg contents plugin
+ *  - adds private submodule if it exists
+ *  - copies over css, and image assets
+ *  - adds site navigation collection
+ *  - adds work/education thistroy collections
+ *  - adds gallery shortcode
+ *  - after build, generates resume pdfs and portfolio thumnails
+ *  - watches svg banner
+ *  - disables gitignore for source of ignored files for eleventy so private files can be used
+ * @param {UserConfig} config 
+ * @returns {Object}
+ */
 module.exports = function eleventyConfig(config) {
     config.setDataDeepMerge(true);
 
