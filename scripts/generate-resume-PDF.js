@@ -2,6 +2,11 @@
 const { chromium } = require('playwright-chromium');
 const path = require('path');
 
+/**
+ * Generates a pdf in _site/downloads of webpage at given url
+ * @param {String} url 
+ * @returns {Void}
+ */
 module.exports = async function generateResumePDF(url) {
   const browser = await chromium.launch();
     const page = await browser.newPage();

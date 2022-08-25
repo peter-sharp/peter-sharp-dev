@@ -6,6 +6,10 @@ const graymatter = require('gray-matter');
 const { readFile, readdir, copyFile } = require('fs').promises;
 const slugify = require('slugify');
 
+/**
+ * Generates images from sites listed in portfolio collection
+ * @returns {Void}
+ */
 module.exports = async function generatePortfolioImages() {
     const files = await (await readdir(path.resolve('src/site/portfolio'))).filter(x => x.includes('.md'));
     
