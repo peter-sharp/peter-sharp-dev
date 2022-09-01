@@ -11,5 +11,5 @@ While I had a few prospective clients, this was mostly a time of developing my b
 Achievements:
  - Learnt how to run Node.js and Python functions on AWS and Azure using the Serverless Framework
  - Created a process to convert my resume page into a PDF using Playwright
- - Gained client interest on a estimate converting a spreadsheet into a web app. (Which I had to turn down after starting contracting for BitPrime)
+ - Gained client interest on a estimate converting a spreadsheet into a web app. <small>(Which I had to turn down as it came after I had started a full-time contract for BitPrime)</small>
 
