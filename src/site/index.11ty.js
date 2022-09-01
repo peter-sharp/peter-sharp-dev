@@ -20,7 +20,7 @@ module.exports.render = function index({ collections }) {
   <section id="services" class="wrapper">
     <div class="wrapper__inner p-note stack stack--gap-500">
       <h2>Services</h2>
-      <ul class="unstyled-list">
+      <ul class="unstyled-list cluster" data-justify="space-between">
         <li class="emoji" emoji="rocket">Web apps</li>
         <li class="emoji" emoji="page">Brochure websites</li>
         <li class="emoji" emoji="shopping-cart">Ecommerce websites</li>
