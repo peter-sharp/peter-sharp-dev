@@ -11,6 +11,9 @@ module.exports.render = function render({ collections }) {
             <h1>Illustration</h1>
             <p>Need something for a catchy Call to action, a unique blog post image, or a website hero image? I can help.</p>
             </header>
+            <div class="wrapper__inner  stack">
+                <p>For more illustration examples <a href="https://petes.me">See my illustration portfolio</a></p>
+            </div>
         </div>
        
     `
