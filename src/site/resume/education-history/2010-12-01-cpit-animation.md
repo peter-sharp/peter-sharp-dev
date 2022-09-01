@@ -1,8 +1,9 @@
 ---
-title: CPIT - Bachelor of Design
+title: CPIT (Now Ara) - Bachelor of Design (animation)
 start: 2008-02-01
 end: 2010-12-01
 tags: ["it","creative"]
+link: https://ara.ac.nz/
 ---
 Bachelor of Design majoring in animation.
 
