@@ -4,21 +4,12 @@ start: 2021-03-01
 end: 2021-08-31
 tags: ["it"]
 ---
-Started a Web development side hustle while working full-time for Barkers (through Stafford recruitment) and the Fairlie Bakehouse. From June 2021 I started developing my freelance business full-time.
+Started a Web development side hustle while working full-time for Barkers then Fairlie Bakehouse. From June 2021 I started developing my freelance business full-time.
 
+While I had a few prospective clients, this was mostly a time of developing my business and technical skills.
 
-While I had a few prospective clients, this was mostly a time of learning.
+Achievements:
+ - Learnt how to run Node.js and Python functions on AWS and Azure using the Serverless Framework
+ - Created a process to convert my resume page into a PDF using Playwright
+ - Gained client interest on a estimate converting a spreadsheet into a web app. (Which I had to turn down after starting contracting for BitPrime)
 
-Primary responsibilities:
-- Self promotion
-- Research and development
-- Quotes and estimates
-- Website development
-
-Things I learnt:
- - Cold-call/email marketing techniques
- - The difference between an estimate, a quote and a proposal
- - Strategies for minimizing risk in business
- - How to set up and use a sales-pipeline
- - How to use the Serverless Framework to run Python and Nodejs functions on AWS and Azure
- - How to use Playwright to convert my resume page into a PDF
