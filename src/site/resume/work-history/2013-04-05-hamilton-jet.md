@@ -3,6 +3,7 @@ title: Hamilton Jet
 start: 2012-09-30
 end: 2013-04-05
 tags: ["general"]
+link: https://www.hamiltonjet.com/
 ---
 
 Worked at Hamilton Jet through Coverstaff as a fettler and packer.

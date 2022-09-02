@@ -3,6 +3,7 @@ title: BitPrime
 start: 2021-08-31
 end: 2022-06-20
 tags: ["general"]
+link: https://bitprime.co.nz/
 ---
 Accepted a full-time contract with BitPrime, a Cryptocurrency retail and OTC exchange based in New Zealand.
 
