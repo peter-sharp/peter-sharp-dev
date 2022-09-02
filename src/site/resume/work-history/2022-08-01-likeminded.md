@@ -5,4 +5,4 @@ end:
 tags: ["it", "general"]
 link: https://likeminded.co.nz/
 ---
-Accepted part-time contract with Like Minded, a learning solutions provider based in New Zealand.
+Accepted part-time remote contract with Like Minded, a learning solutions provider based in New Zealand.

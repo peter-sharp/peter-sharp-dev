@@ -5,7 +5,7 @@ end: 2022-06-20
 tags: ["general"]
 link: https://bitprime.co.nz/
 ---
-Accepted a full-time contract with BitPrime, a Cryptocurrency retail and OTC exchange based in New Zealand.
+Accepted a full-time remote contract with BitPrime, a Cryptocurrency retail and OTC exchange based in New Zealand.
 
 Primary responsibilities:
  - Rolling out new website features from design to deployment
