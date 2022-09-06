@@ -58,6 +58,7 @@ module.exports = function eleventyConfig(config) {
     config.addShortcode('gallery', galleryShortcode);
 
     config.on('afterBuild', async () => {
+        if(process.env.SKIP_AFTER_BUILD) return;
         let generateResumePDF;
         let generatePortfolioImages;
         try {
