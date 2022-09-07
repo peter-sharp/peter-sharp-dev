@@ -239,6 +239,12 @@ button {
     transform: translateZ(-3px) scale(4.04);
 }
 
+.hero-layer__clouds {
+    background: linear-gradient(rgba(255,255,255, 0) 0%, rgba(255,255,255, 0.33) 20%);
+    height: 43vh;
+    top: 57vh;
+}
+
 .hero-layer__sheep {
     pointer-events: none;
     bottom: -2px;

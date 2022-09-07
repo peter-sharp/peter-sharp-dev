@@ -15,6 +15,7 @@ module.exports.render = function index({ collections }) {
     <div class="hero__svg-bg parallax__layer hero-layer__mountain"  data-depth="200">
     ${this.svgContents('/src/site/mountain-banner-mountain-bg.svg')}
     </div>
+    <div class="parallax__layer hero-layer__clouds" data-depth="100"></div>
     <div class="wrapper__inner centered parallax__layer hero-layer__cta" data-depth="0">
       <div class=" hero__cta stack">
         <h2 class="hero__message">Simple, effective web apps and&nbsp;websites</h2>
