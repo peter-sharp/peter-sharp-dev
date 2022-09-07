@@ -241,6 +241,7 @@ button {
 
 .hero-layer__sheep {
     pointer-events: none;
+    bottom: -2px;
 }
 
 .home__site-header {
