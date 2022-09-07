@@ -569,5 +569,6 @@ button {
 
   .hero__svg-bg {
     height: 50vh;
+    top: 25vh;
   }
 }
