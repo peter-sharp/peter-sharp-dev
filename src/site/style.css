@@ -1,4 +1,5 @@
 :root {
+    --color-background: #d6dbec;
     --body-color: #350d71;
     --size-content-width: 75rem;
     --color-primary: rgb(0,141,246);
@@ -11,6 +12,10 @@
 
 html, body {
     height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 h1,
@@ -37,6 +42,7 @@ body {
     color: #350d71;
     color: var(--body-color);
     background-color: #d6dbec;
+    background-color: var(--color-background);
 }
 
 main {
@@ -188,6 +194,55 @@ button {
   justify-content: space-between;
 }
 
+/* see https://keithclark.co.uk/articles/pure-css-parallax-websites/ */
+.parallax {
+    transform-style: preserve-3d;
+    perspective-origin-x: 100%;
+    perspective: 1px;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.parallax__zfix {
+    z-index: 1;
+}
+.parallax__group {
+    position: relative;
+    transform-style: inherit;
+}
+
+.parallax__layer {
+    position: absolute;
+    transform-origin-x: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.parallax__layer[data-depth="0"] {
+    transform: translateZ(0);
+}
+
+.parallax__layer[data-depth="100"] {
+    transform: translateZ(-1px) scale(2.02);
+}
+
+.parallax__layer[data-depth="200"] {
+    transform: translateZ(-2px) scale(3.03);
+}
+
+.parallax__layer[data-depth="300"] {
+    /* 1 + (translateZ * -1) / perspective */
+    transform: translateZ(-3px) scale(4.04);
+}
+
+.hero-layer__sheep {
+    pointer-events: none;
+}
+
 .home__site-header {
     background-color: rgb(0, 139, 246);
 }
@@ -327,12 +382,18 @@ button {
     /* background: rgb(0,141,246); */
     /* background: linear-gradient(0deg, rgba(0,141,246,1) 0%, rgba(170,27,198,1) 35%, rgba(227,44,44,1) 65%, rgba(243,128,0,1) 100%); */
     position: relative;
+    height: 70vh;
 }
 
 .hero__svg-bg {
     margin-left: -1em;
     margin-right: -1em;
     width: 100%;
+}
+
+.sky {
+    height: 100vh;
+    background: linear-gradient(#008df6, #aa1bc6);
 }
 
 .sheep {
@@ -425,6 +486,12 @@ button {
     padding-bottom: 4em;
 }
 
+.bg-color {
+    background-color: #d6dbec;
+    background-color: var(--color-background);
+    fill: #d6dbec;
+    fill: var(--color-background);
+}
 
 .price-badge {
     background-color: rgb(9, 223, 116);

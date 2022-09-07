@@ -1,4 +1,4 @@
-module.exports = function({ site, title, page, content, description = '', collections }) {
+module.exports = function({ site, title, page, content, parallax = false, description = '', collections }) {
   return /*html*/`
   <!DOCTYPE html>
   <html lang="en" ng-app="portfolioApp">
@@ -29,8 +29,8 @@ module.exports = function({ site, title, page, content, description = '', collec
                 insights.trackPages()
             </script>
       </head>
-      <body class="sticky-footer h-card ${page.fileSlug || 'home'}">
-          <header class="site-header ${page.fileSlug || 'home'}__site-header">
+      <body class="${parallax ? 'parallax' : ''} sticky-footer h-card ${page.fileSlug || 'home'}">
+          <header class="${parallax ? 'parallax__group parallax__zfix' : ''} site-header ${page.fileSlug || 'home'}__site-header">
               <h1 class="site-title">
                 <a class="site-title__link" href="/">
                     ${this.svgContents('/src/site/logo.svg', 'site-logo')}<span class="site-title__text p-name">Peter Sharp</span>
@@ -55,10 +55,10 @@ module.exports = function({ site, title, page, content, description = '', collec
                   </ul>
               </nav>
           </header>
-          <main class="sticky-footer__content stack stack--gap-900">
+          <main class="${parallax ? 'parallax__group' : ''} sticky-footer__content">
               ${content}
           </main>
-          <footer class="wrapper site-footer sticky-footer__footer">
+          <footer class="${parallax ? 'parallax__group' : ''} wrapper site-footer sticky-footer__footer">
               <div class="wrapper__inner cluster">
                 <section class="">
                     <a class="site-footer__link" href="/contact">Contact me</a>

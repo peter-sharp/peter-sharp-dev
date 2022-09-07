@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 238 212">
+  <defs>
+    <linearGradient id="a">
+      <stop offset="0" stop-color="#aa1bc6"/>
+      <stop offset="1" stop-color="#f38000"/>
+    </linearGradient>
+    <linearGradient xlink:href="#a" id="e" gradientUnits="userSpaceOnUse" x1="83.2" y1="177.5" x2="83.2" y2="-13.8"/>  
+  </defs>
+
+  <path class="mountain" d="m132,6l56,85l19,-12l36,49l-0.88,85.53l-247.91,-0.7l-0.2,-74.83l42,-43l14,12l82,-101z" fill="url(#e)" />
+</svg>
