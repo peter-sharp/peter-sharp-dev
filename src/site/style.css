@@ -412,14 +412,16 @@ button {
 
 .hero__cta {
     box-sizing: border-box;
-    position: absolute;
-    width: 100%;
-    max-width: 20em;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 1.3em;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    max-width: 22em;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
-    background: rgba(0, 0, 0, 0.2);
-    padding: 1.6em;
+    padding: 1.3em;
+    position: absolute;
+    width: 100%;
 }
 
 .hero__message {
