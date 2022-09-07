@@ -1,0 +1,26 @@
+<svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 238 212" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" >
+ <filter id="cloudBlur">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="1"/>
+ </filter>
+ <style>
+     .cloud {
+         fill: #fff;
+     }
+     .clouds {
+         opacity: 0.2;
+     }
+ </style>
+  <g class="clouds">
+  <ellipse cx="43.31" cy="119.13" class="cloud" filter="url(#cloudBlur)" id="svg_1" rx="39.53" ry="35.24"/>
+   <ellipse cx="79.14" cy="132.56" class="cloud" filter="url(#cloudBlur)" id="svg_2" rx="29.01" ry="25.7"/>
+   <ellipse cx="89.16" cy="122.19" class="cloud" filter="url(#cloudBlur)" id="svg_3" rx="17.53" ry="14.99"/>
+   <ellipse cx="1.73" cy="99.8" class="cloud" filter="url(#cloudBlur)" id="svg_4" rx="29.79" ry="29.6"/>
+   <ellipse cx="3.49" cy="140.3" class="cloud" filter="url(#cloudBlur)" id="svg_5" rx="17.53" ry="15.97"/>
+   <ellipse cx="109.41" cy="144.58" class="cloud" filter="url(#cloudBlur)" id="svg_6" rx="12.85" ry="12.85"/>
+   <ellipse cx="167.44" cy="118.49" class="cloud" filter="url(#cloudBlur)" id="svg_7" rx="12.85" ry="12.85"/>
+   <ellipse cx="177.96" cy="138.74" class="cloud" filter="url(#cloudBlur)" id="svg_8" rx="29.01" ry="25.7"/>
+   <ellipse cx="223.91" cy="126.28" class="cloud" filter="url(#cloudBlur)" id="svg_9" rx="39.53" ry="35.24"/>
+   <ellipse cx="235.21" cy="90.45" class="cloud" filter="url(#cloudBlur)" id="svg_10" rx="17.53" ry="15.97"/>
+   <ellipse cx="152.64" cy="150.04" class="cloud" filter="url(#cloudBlur)" id="svg_11" rx="9.35" ry="8.96"/>
+  </g>
+</svg>
