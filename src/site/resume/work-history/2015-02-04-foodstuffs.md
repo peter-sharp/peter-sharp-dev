@@ -1,5 +1,5 @@
 ---
-title: FoodStuffs
+title: FoodStuffs (Coverstaff)
 start: 2014-10-01
 end: 2015-02-04
 tags: ["general"]
