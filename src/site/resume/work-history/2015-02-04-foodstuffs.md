@@ -2,7 +2,7 @@
 title: FoodStuffs (Coverstaff)
 start: 2014-10-01
 end: 2015-02-04
-tags: ["general"]
+tags: []
 link: https://www.foodstuffs.co.nz/
 ---
 Worked as a shelf filler and auditor.
