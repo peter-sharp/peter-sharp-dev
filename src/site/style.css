@@ -289,7 +289,7 @@ button {
 }
 
 
-.nav-item--active .nav-item__link {
+.nav-item[aria-current="page"] .nav-item__link {
     font-weight: bolder;
 }
 
@@ -297,7 +297,7 @@ button {
 
 .nav-item__link:focus ~ .nav-item__cursor,
 .nav-item:hover .nav-item__cursor,
-.nav-item--active .nav-item__cursor {
+.nav-item[aria-current="page"] .nav-item__cursor {
     visibility: visible;
     transition: transform 300ms;
     transform: translateX(-50%) scaleY(1);
@@ -309,7 +309,7 @@ button {
     visibility: hidden;
 }
 
-.nav-item--active .nav-item__link ~ .nav-item__cursor  .cursor__inner {
+.nav-item[aria-current="page"] .nav-item__link ~ .nav-item__cursor  .cursor__inner {
     visibility: visible;
 }
 

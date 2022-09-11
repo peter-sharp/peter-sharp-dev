@@ -41,9 +41,10 @@ module.exports = function({ site, title, page, content, parallax = false, descri
                       ${collections.siteNav.map(
                           ({ data, url: itemUrl }) => /*html*/`
                               <li
-                                  class="nav-item ${page.url == itemUrl
-                                      ? "nav-item--active"
-                                      : ""}"
+                                  class="nav-item "
+                                  ${page.url == itemUrl
+                                      ? 'aria-current="page"'
+                                      : ''}
                               >
                                   <a class="nav-item__link" href="${itemUrl}"
                                       >${data.title}</a
