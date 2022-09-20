@@ -176,6 +176,10 @@ h6 + .subheader {
   min-width: 18rem;
 }
 
+.marg-right-100 {
+    margin-right: 0.4em;
+}
+
 .button,
 button {
     font-size: 1.1em;
