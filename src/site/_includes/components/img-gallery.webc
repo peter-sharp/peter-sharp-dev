@@ -1,0 +1,14 @@
+
+<ul class="gallery">
+    <script webc:type="js">
+        collections.portfolio.map(x => /*html*/`<li class="card gallery__card">
+          <figure class="stack">
+            <img class="card__image" width="500" height="281" src="/assets/${slugify(x.data.link)}.jpg"/>
+            <figcaption class="card__title">
+              <h3><a class="card__link" href="${x.data.link.startsWith('/') ? x.data.link : `https://${x.data.link}`}">${x.data.title}</a></h3>
+              <span>${x.data.subtitle}</span>
+            </figcaption>
+          <figure>
+          </li>`).join('\n')
+    </script>
+  </ul>

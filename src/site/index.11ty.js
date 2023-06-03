@@ -8,7 +8,7 @@ module.exports.data = {
   parallax: true
 }
 
-module.exports.render = function index({ collections }) {
+module.exports.render = async function index(page) {
   return /*html*/`
   <header id="pageHero" class="hero wrapper wrapper--full-width parallax__group">
     <div class="sky parallax__layer hero-layer__sky"  data-depth="300"></div>
@@ -54,17 +54,7 @@ module.exports.render = function index({ collections }) {
         <header class="wrapper">
           <h2 class="wrapper__inner">portfolio</h2>
         </header>
-        <ul class="gallery">
-          ${collections.portfolio.map(x => /*html*/`<li class="card gallery__card">
-          <figure class="stack">
-            <img class="card__image" width="500" height="281" src="/assets/${slugify(x.data.link)}.jpg"/>
-            <figcaption class="card__title">
-              <h3><a class="card__link" href="${x.data.link.startsWith('/') ? x.data.link : `https://${x.data.link}`}">${x.data.title}</a></h3>
-              <span>${x.data.subtitle}</span>
-            </figcaption>
-          <figure>
-          </li>`).join('\n')}
-        </ul>
+       ${await this.renderFile("src/site/_includes/components/img-gallery.webc", page)}
       </div>
     </section>
     <section id="contactUs" class="wrapper cta">
