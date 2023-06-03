@@ -6,6 +6,11 @@ const galleryShortcode = require('./src/site/_includes/components/gallery.js');
 const svgContents = require("eleventy-plugin-svg-contents");
 const copy = require("recursive-copy");
 
+const pluginWebc = require("@11ty/eleventy-plugin-webc");
+const { EleventyRenderPlugin } = require("@11ty/eleventy");
+
+
+
 let private;
 try {
     private = require("./private/.eleventy.js");
@@ -29,6 +34,10 @@ try {
 module.exports = function eleventyConfig(config) {
     config.setDataDeepMerge(true);
 
+    config.addPlugin(pluginWebc, {
+        components: "src/site/_includes/components/**/*.webc",
+    });
+    config.addPlugin(EleventyRenderPlugin);
     config.addPlugin(svgContents);
     if(private) config.addPlugin(private);
 

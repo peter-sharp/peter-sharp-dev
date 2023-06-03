@@ -1,0 +1,30 @@
+<script webc:type="js" webc:root>
+const Image = require("@11ty/eleventy-img");
+sizes = sizes || ""
+alt = alt || ""
+widths = widths?.split(/\s+/).map(x => parseInt(x, 10)) || [100, 200, 600]
+if(width) widths.push(parseInt(width, 10))
+sizes = sizes?.split(/\s+/)
+
+async function renderImage({src, sizes, alt, widths, cssClass = ''}) {
+  let metadata = await Image(src, {
+    widths,
+    formats: ["avif", "jpeg"],
+    outputDir: "./_site/img/"
+  });
+  
+  let imageAttributes = {
+    alt,
+    sizes,
+    loading: "lazy",
+    decoding: "async",
+  };
+  // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
+  let html = Image.generateHTML(metadata, imageAttributes);
+  if(cssClass) html = html.replace('<picture', `<picture class="${cssClass}" `)
+  console.log(html)
+  return html;
+}
+
+renderImage({ src, sizes, alt, widths, cssClass: this['class']})
+</script>
