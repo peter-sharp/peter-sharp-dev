@@ -9,6 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "make": "run-s make:*",
+    "make:submodules": "git submodule update --init --recursive --remote",
     "make:private": "node private/bin/private.js",
     "make:eleventy": "eleventy",
     "start": "eleventy --serve"
