@@ -19,79 +19,81 @@ description: |
 # Looking for contract work in Web Development.
 ---
 <section class="wrapper">
-    <p>Fullstack web developer with 5+ years experience designing, delivering and maintaining small to large scale websites and web apps in WordPress as well as a variety of other frameworks.
-    </p>
-    <p>Having a design background, I care about crafting sites and apps with good user experience that excel in meeting their bottom line.</p>
-    
+  <p>Fullstack web developer with 5+ years experience designing, delivering and maintaining small to large scale websites and web apps in WordPress as well as a variety of other frameworks.
+  </p>
+  <p>Having a design background, I care about crafting sites and apps with good user experience that excel in meeting their bottom line.</p>
+
 </section>
 <section class="wrapper">
-    {% include 'components/skillList' %}
+  {% include 'components/skillList' %}
 </section>
 <div class="wrapper">
-    <div class="columns">
-        <section class="column-1-2">
-            {% include 'components/historyList', title: 'Work', collection: 'itWork', icon: 'work' %}
-        </section>
-        <section class="column-1-2">
-            {% include 'components/historyList', title: 'Education', collection: 'itEducation', icon: 'education' %}
-        </section>
-    </div>
+  <div class="columns">
+    <section class="column-1-2">
+      {% include 'components/historyList', title: 'Work', collection: 'itWork', icon: 'work' %}
+    </section>
+    <section class="column-1-2">
+      {% include 'components/historyList', title: 'Education', collection: 'itEducation', icon: 'education' %}
+    </section>
+  </div>
 </div>
 <section>
-    <div class="wrapper">
-        <h2 class="wrapper__inside">Portfolio</h2>
-    </div>
-    {% gallery collections.portfolio, '', 'start', true %}
+  <div class="wrapper">
+    <h2 class="wrapper__inside">Portfolio</h2>
+  </div>
+  {% renderTemplate "webc", collections %}
+    <portfolio-compact justify="start" local="true"></portfolio-compact>
+  {% endrenderTemplate %}
 </section>
 <section class="wrapper">
-    <h2>Technology summary</h2>
-  
-    <ul class="columns justify-start">
-        <li>HTML</li>
-        <li>
-            CSS
-        </li>
-        <li>
-            JavaScript
-        </li>
-        <li>React</li>
-        <li>Lodash</li>
-        <li>jQuery</li>
-        <li>AJAX</li>
-        <li>REST</li>
-    
-        <li>
-            Python
-        </li>
-        <li>
-            Nodejs
-        </li>
-        <li>
-            PHP
-        </li>
-        <li>
-            WordPress
-        </li>
-        <li>
-            Slim
-        </li>
-        <li>
-            Zend (1.1) 
-        </li>
-        <li>
-            Bash
-        </li>
-        <li>
-            MySQL
-        </li>
-        <li>
-            Linux
-        </li>
-        <li>
-            AWS
-        </li>
-    </ul>
+  <h2>Technology summary</h2>
+
+  <ul class="columns justify-start">
+    <li>HTML</li>
+    <li>
+      CSS
+    </li>
+    <li>
+      JavaScript
+    </li>
+    <li>React</li>
+    <li>Lodash</li>
+    <li>jQuery</li>
+    <li>AJAX</li>
+    <li>REST</li>
+
+    <li>
+      Python
+    </li>
+    <li>
+      Nodejs
+    </li>
+    <li>
+      PHP
+    </li>
+    <li>
+      WordPress
+    </li>
+    <li>
+      Slim
+    </li>
+    <li>
+      Zend (1.1)
+    </li>
+    <li>
+      Bash
+    </li>
+    <li>
+      MySQL
+    </li>
+    <li>
+      Linux
+    </li>
+    <li>
+      AWS
+    </li>
+  </ul>
 </section>
 <section class="wrapper">
-    {% include 'components/interestList' %}
+  {% include 'components/interestList' %}
 </section>

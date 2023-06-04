@@ -24,6 +24,7 @@ module.exports = function({ site, title, page, content, parallax = false, descri
             <link rel="stylesheet" href="/assets/imageComparison.css"/>
             <link rel="stylesheet" href="/assets/gallery.css"/>
             <script src="https://getinsights.io/js/insights.js"></script>
+            <link rel="stylesheet" href="${ this.getBundleFileUrl("css") }">
             <script>
                 insights.init("${site.insightId}")
                 insights.trackPages()

@@ -4,7 +4,7 @@ const path = require('path');
 const  { unary } = require('ramda');
 const graymatter = require('gray-matter');
 const { readFile, readdir, copyFile } = require('fs').promises;
-const slugify = require('slugify');
+const slugify = require('@sindresorhus/slugify');
 
 /**
  * Generates images from sites listed in portfolio collection

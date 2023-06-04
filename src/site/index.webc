@@ -1,22 +1,18 @@
-const slugify = require('slugify')
-
-module.exports.data = {
-  layout: 'layouts/index.11ty.js',
-  title: 'Home',
-  menuIndex: 1,
-  tags: 'page',
+---
+  layout: 'layouts/index.11ty.js'
+  title: 'Home'
+  menuIndex: 1
+  tags: 'page'
   parallax: true
-}
+---
 
-module.exports.render = async function index(page) {
-  return /*html*/`
   <header id="pageHero" class="hero wrapper wrapper--full-width parallax__group">
     <div class="sky parallax__layer hero-layer__sky"  data-depth="300"></div>
     <div class="hero__svg-bg parallax__layer hero-layer__mountain"  data-depth="200">
-    ${this.svgContents('/src/site/mountain-banner-mountain-bg.svg')}
+   <svg-contents path="/src/site/mountain-banner-mountain-bg.svg"></svg-contents>
     </div>
     <div class="parallax__layer hero-layer__clouds" data-depth="100">
-    ${this.svgContents('/src/site/mountain-banner-clouds.svg')}
+   <svg-contents path="/src/site/mountain-banner-clouds.svg"></svg-contents>
     </div>
     <div class="wrapper__inner centered parallax__layer hero-layer__cta" data-depth="0">
       <div class=" hero__cta stack">
@@ -25,8 +21,8 @@ module.exports.render = async function index(page) {
       </div>
     </div>
     <div class="parallax__layer hero-layer__sheep" data-depth="0">
-    ${this.svgContents('/src/site/mountain-banner-mountain-fg.svg')}
-    ${this.svgContents('/src/site/mountain-banner-sheep.svg')}
+    <svg-contents path="/src/site/mountain-banner-mountain-fg.svg"></svg-contents>
+    <svg-contents path="/src/site/mountain-banner-sheep.svg"></svg-contents>
     </div>
   </header>
   <div class="parallax__group bg-color pad-top-900 stack stack--gap-900" >
@@ -54,7 +50,7 @@ module.exports.render = async function index(page) {
         <header class="wrapper">
           <h2 class="wrapper__inner">portfolio</h2>
         </header>
-       ${await this.renderFile("src/site/_includes/components/img-gallery.webc", page)}
+       <portfolio-full></portfolio-full>
       </div>
     </section>
     <section id="contactUs" class="wrapper cta">
@@ -64,5 +60,3 @@ module.exports.render = async function index(page) {
       </div>
     </section>
   </div>
-  `;
-}

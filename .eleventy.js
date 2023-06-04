@@ -1,7 +1,6 @@
 require('dotenv').config();
 
 const siteNav = require('./src/site/_includes/collections/siteNav.js');
-const galleryShortcode = require('./src/site/_includes/components/gallery.js');
 
 const svgContents = require("eleventy-plugin-svg-contents");
 const copy = require("recursive-copy");
@@ -63,8 +62,6 @@ module.exports = function eleventyConfig(config) {
             return collectionApi.getFilteredByTags("education", "history", cvType).sort(byStartDate);
         });
     }
-
-    config.addShortcode('gallery', galleryShortcode);
 
     config.on('afterBuild', async () => {
         if(process.env.SKIP_AFTER_BUILD) return;

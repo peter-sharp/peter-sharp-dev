@@ -1,0 +1,3 @@
+<template webc:type="11ty" 11ty:type="liquid">
+    {{ path | svgContents }}
+</template>

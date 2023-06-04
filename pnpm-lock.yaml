@@ -3,7 +3,8 @@ lockfileVersion: 5.4
 specifiers:
   '@11ty/eleventy': ^2.0.1
   '@11ty/eleventy-img': ^3.0.0
-  '@11ty/eleventy-plugin-webc': ^0.9.4
+  '@11ty/eleventy-plugin-webc': ^0.11.1
+  '@sindresorhus/slugify': 1.1.2
   csv-stringify: ^6.3.0
   date-fns: ^2.29.2
   dotenv: ^8.2.0
@@ -24,7 +25,8 @@ dependencies:
 devDependencies:
   '@11ty/eleventy': 2.0.1
   '@11ty/eleventy-img': 3.0.0
-  '@11ty/eleventy-plugin-webc': 0.9.4
+  '@11ty/eleventy-plugin-webc': 0.11.1
+  '@sindresorhus/slugify': 1.1.2
   csv-stringify: 6.3.0
   dotenv: 8.2.0
   eleventy-plugin-svg-contents: 0.7.0
@@ -101,17 +103,14 @@ packages:
       - supports-color
     dev: true
 
-  /@11ty/eleventy-plugin-webc/0.9.4:
-    resolution: {integrity: sha512-dNIdrL1iTXzvjTO9ITWEL72x978nK6MKGsEFjUCE7OPdQMw/Gst5wGsXVAjpN0nzuulgz6akNJAK0w1n8TcdnA==}
+  /@11ty/eleventy-plugin-webc/0.11.1:
+    resolution: {integrity: sha512-VzpcTU3oFjn79mzvla8YB+lRZttDToEBwsJTsMQmMj2msG7ECB1QyHdHZE7FWwvJvuLmV9BTKZoRxuyM7i1YYg==}
     engines: {node: '>=14.18'}
     dependencies:
-      '@11ty/eleventy': 2.0.1
       '@11ty/eleventy-plugin-bundle': 1.0.4
-      '@11ty/webc': 0.9.3
+      '@11ty/webc': 0.11.4
     transitivePeerDependencies:
-      - bufferutil
       - supports-color
-      - utf-8-validate
     dev: true
 
   /@11ty/eleventy-utils/1.0.1:
@@ -175,8 +174,8 @@ packages:
     engines: {node: '>=14'}
     dev: true
 
-  /@11ty/webc/0.9.3:
-    resolution: {integrity: sha512-r5y2YcIrcptmmJTajoW1A5VUoKYa9bqeuZAAcSP1q/ROFwh7PfjYm9//4YSRV6B17RfCm10CO3rHeyL0Z/ppQw==}
+  /@11ty/webc/0.11.4:
+    resolution: {integrity: sha512-q1GMcjNnx9PxUr6jyTT5CdDFma3JWkT5D45wRNYUQ/B4cxTTxpC15b2rYdzNaGuSqB6tsArQ9Qh4BPqg6Xo9cA==}
     engines: {node: '>=14.18'}
     dependencies:
       '@11ty/eleventy-utils': 1.0.1
@@ -186,7 +185,7 @@ packages:
       fast-glob: 3.2.12
       is-glob: 4.0.3
       nanoid: 4.0.1
-      node-retrieve-globals: 2.0.6
+      node-retrieve-globals: 2.0.8
       parse5: 7.1.2
     dev: true
 
@@ -1581,8 +1580,8 @@ packages:
       whatwg-url: 5.0.0
     dev: true
 
-  /node-retrieve-globals/2.0.6:
-    resolution: {integrity: sha512-z4kFZ6rjYf2uT2W2qtNfPVuCmMS9oogiuMTQnFp8xEeGKdVPvm3tZ4gslmQZnOOrVOkPMlitfgxGIhFXmiFx4w==}
+  /node-retrieve-globals/2.0.8:
+    resolution: {integrity: sha512-mVimS/m8H28kyMdvOIfyMCM8wFNiKXM83ag1yHYP297iVmlCSmCh7Ih4b+ig9/DZ2+LbXZCPLDSZO4yRa5ttyg==}
     dependencies:
       acorn: 8.8.2
       acorn-walk: 8.2.0

@@ -1,7 +1,19 @@
-
+<script webc:setup>
+  const portfolio = [...collections.portfolio].sort((a,b) => {
+  if (a.data.order < b.data.order) {
+    return -1;
+  }
+  if (a.data.order > b.data.order) {
+    return 1;
+  }
+  // a must be equal to b
+  return 0;
+  })
+</script>
 <ul class="gallery">
     <script webc:type="js">
-        collections.portfolio.map(x => /*html*/`<li class="card gallery__card">
+        
+        portfolio.map(x => /*html*/`<li class="card gallery__card">
           <figure class="stack">
             <img class="card__image" width="500" height="281" src="/assets/${slugify(x.data.link)}.jpg"/>
             <figcaption class="card__title">
