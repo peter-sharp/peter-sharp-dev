@@ -22,20 +22,23 @@ module.exports = async function generatePortfolioImages() {
     const browser = await chromium.launch();
     const images = await Promise.all(links.map(async link => {
         const page = await browser.newPage();
-        const imgPath = path.resolve('_site/assets', `${slugify(link)}.jpg`);
-        const portfolioDest = path.resolve('_site/resume', `${slugify(link)}.jpg`);
+        const slugifiedLink = slugify(link);
+        const imgPath = path.resolve(__dirname, '../_site/assets', `${slugifiedLink}.jpg`);
+        const portfolioDest = path.resolve(__dirname, '../_site/resume', `${slugifiedLink}.jpg`);
+
+        const source = link.startsWith('/') ? `file://${path.resolve(__dirname, '../_site', link.replace(/^\//, ''), 'index.html').replaceAll('\\', '\/')}` : `https://${link}`;
         try {
-            const url = link.startsWith('/') ? `file://${path.resolve(__dirname, '..', '_site' + link, 'index.html')}` : `https://${link}`;
-            console.log('Taking screenshot of', url, 'to', imgPath);
-            await page.goto(url);
+            console.log('Taking screenshot of', source, 'to', imgPath);
+            await page.goto(source);
             await page.screenshot({ width: 500, height: 500, type: 'jpeg', path: imgPath });
             // copy to resume 
             await copyFile(imgPath, portfolioDest);
         } catch (e) {
             return new Error(`failed to screenshot ${link}`);
         }
-        return [imgPath, portfolioDest];
+        return [source, imgPath, portfolioDest];
     }));
-    images.forEach(unary(console.info));
+    
     await browser.close();
+    return images;
 };

@@ -10,7 +10,11 @@ const path = require('path');
 module.exports = async function generateResumePDF(url) {
   const browser = await chromium.launch();
     const page = await browser.newPage();
-    await page.goto(`file://${path.resolve('_site/'+url+'/index.html')}`);
-    await page.pdf({ path: `_site/downloads/${url}.pdf`, format: 'A4' });
+    const source = `file://${path.resolve(__dirname, '../_site', url.replace(/^\//, ''), 'index.html').replaceAll('\\', '\/')}`;
+    const destination = path.resolve(__dirname, '..', '_site/','downloads', `${url}.pdf`);
+    await page.goto(source);
+    await page.pdf({ path: destination, format: 'A4' });
     await browser.close();
+
+    return [source, destination];
 };

@@ -80,21 +80,22 @@ module.exports = function eleventyConfig(config) {
         }
        
         try {
-            await generatePortfolioImages();
-            console.info('portfolio images generated');
+            const images = await generatePortfolioImages();
+            console.info('portfolio images generated:\n', images.map(([src, dest, destRes]) => `${src} to ${dest}, ${destRes}`).join("\n"));
         } catch (e) {
             console.error(e);
         }
 
         try {
-            await generateResumePDF('resume');
+            
+            const [src, dest] = await generateResumePDF('resume');
 
             await copy('src/site/assets/gallery.css', '_site/resume/gen/gallery.css', { overwrite: true });
             await copy('src/site/resume', '_site/resume/gen', { filter: '*.css', overwrite: true });
             await copy('src/site/resume', '_site/resume/nz', { filter: '*.css', overwrite: true });
-            await generateResumePDF('resume/gen');
+            const [srcGen, destGen] = await generateResumePDF('resume/gen');
             
-            console.info('resume PDFs generated');
+            console.info(`resume PDFs generated: \n ${src} to ${dest} \n ${srcGen} to ${destGen} `);
         } catch (e) {
             console.error(e);
         }
