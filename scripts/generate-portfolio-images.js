@@ -19,8 +19,8 @@ module.exports = async function generatePortfolioImages() {
         return data.link;
     }));
 
-    const browser = await chromium.launch();
     const images = await Promise.all(links.map(async link => {
+        const browser = await chromium.launch();
         const page = await browser.newPage();
         const slugifiedLink = slugify(link);
         const imgPath = path.resolve(__dirname, '../_site/assets', `${slugifiedLink}.jpg`);
@@ -36,9 +36,9 @@ module.exports = async function generatePortfolioImages() {
         } catch (e) {
             return new Error(`failed to screenshot ${link}`);
         }
+        await browser.close();
         return [source, imgPath, portfolioDest];
     }));
     
-    await browser.close();
     return images;
 };
