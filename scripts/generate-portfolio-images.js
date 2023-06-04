@@ -26,7 +26,7 @@ module.exports = async function generatePortfolioImages() {
         const imgPath = path.resolve(__dirname, '../_site/assets', `${slugifiedLink}.jpg`);
         const portfolioDest = path.resolve(__dirname, '../_site/resume', `${slugifiedLink}.jpg`);
 
-        const source = link.startsWith('/') ? `file://${path.resolve(__dirname, '../_site', link.replace(/^\//, ''), 'index.html').replaceAll('\\', '\/')}` : `https://${link}`;
+        const source = link.startsWith('/') ? `file://${path.resolve(__dirname, '../_site', link.replace(/^\//, ''), 'index.html').replace(/\\/g, '\/')}` : `https://${link}`;
         try {
             console.log('Taking screenshot of', source, 'to', imgPath);
             await page.goto(source);
