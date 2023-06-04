@@ -81,25 +81,28 @@ module.exports = function eleventyConfig(config) {
        
         try {
             const images = await generatePortfolioImages();
-            console.info('portfolio images generated:\n', images.map(([src, dest, destRes]) => `${src} to ${dest}, ${destRes}`).join("\n"));
+            console.info('portfolio images generated:\n', images.map(msgOnError(([src, dest, destRes]) => `${src} to ${dest}, ${destRes}`)).join("\n"));
         } catch (e) {
             console.error(e);
         }
 
         try {
             
-            const [src, dest] = await generateResumePDF('resume');
+          
 
             await copy('src/site/assets/gallery.css', '_site/resume/gen/gallery.css', { overwrite: true });
             await copy('src/site/resume', '_site/resume/gen', { filter: '*.css', overwrite: true });
             await copy('src/site/resume', '_site/resume/nz', { filter: '*.css', overwrite: true });
-            const [srcGen, destGen] = await generateResumePDF('resume/gen');
+            const pdfs = await generateResumePDF(['resume','resume/gen']);
             
-            console.info(`resume PDFs generated: \n ${src} to ${dest} \n ${srcGen} to ${destGen} `);
+            console.info(`resume PDFs generated: \n`, pdfs.map(msgOnError(([src, dest]) =>  `${src} to ${dest}`)).join("\n"));
         } catch (e) {
             console.error(e);
         }
     });
+    function msgOnError(fn) {
+        return (x) => x instanceof Error ? x.message : fn(x);
+    }
 
     config.addWatchTarget("./src/site/mountain-banner.svg");
    
