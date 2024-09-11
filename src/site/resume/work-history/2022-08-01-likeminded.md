@@ -1,7 +1,7 @@
 ---
 title: Like Minded
 start: 2022-08-04
-end: 
+end: 2022-09-30
 tags: ["it", "general"]
 link: https://likeminded.co.nz/
 ---
