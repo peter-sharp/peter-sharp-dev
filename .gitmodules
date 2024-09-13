@@ -1,4 +1,0 @@
-
-[submodule "private"]
-	path = private
-	url = git@github.com:peter-sharp/peter-sharp-dev-private.git

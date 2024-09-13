@@ -10,23 +10,16 @@ const { EleventyRenderPlugin } = require("@11ty/eleventy");
 
 
 
-let private;
-try {
-    private = require("./private/.eleventy.js");
-} catch(e) {
-    console.log('Failed to load private module...');
-}
+
 /**
  * Configues petersharp.dev site:
  *  - adds svg contents plugin
- *  - adds private submodule if it exists
  *  - copies over css, and image assets
  *  - adds site navigation collection
  *  - adds work/education thistroy collections
  *  - adds gallery shortcode
  *  - after build, generates resume pdfs and portfolio thumnails
  *  - watches svg banner
- *  - disables gitignore for source of ignored files for eleventy so private files can be used
  * @param {UserConfig} config 
  * @returns {Object}
  */
@@ -38,7 +31,6 @@ module.exports = function eleventyConfig(config) {
     });
     config.addPlugin(EleventyRenderPlugin);
     config.addPlugin(svgContents);
-    if(private) config.addPlugin(private);
 
     config.addPassthroughCopy('src/site/style.css');
     config.addPassthroughCopy('src/site/assets');
@@ -102,8 +94,6 @@ module.exports = function eleventyConfig(config) {
     }
 
     config.addWatchTarget("./src/site/mountain-banner.svg");
-   
-    config.setUseGitIgnore(false);
     
     return {
         dir: {
