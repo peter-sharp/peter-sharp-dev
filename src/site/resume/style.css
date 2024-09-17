@@ -204,3 +204,9 @@ button {
     text-align: left;
   }
 }
+
+@media print {
+  .columns.print-as-rows {
+    display: block;
+  }
+}
